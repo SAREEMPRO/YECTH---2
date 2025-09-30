@@ -10,7 +10,7 @@ const InteractiveMap = ({ areas, selectedArea, onAreaSelect }) => {
       <div className="p-6 border-b border-border">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-xl font-semibold text-text-primary">Service Coverage Map</h3>
-          <div className="flex space-x-2">
+          {/* <div className="flex space-x-2">
             <Button
               variant={mapView === 'coverage' ? 'default' : 'outline'}
               size="sm"
@@ -25,7 +25,7 @@ const InteractiveMap = ({ areas, selectedArea, onAreaSelect }) => {
             >
               Satellite
             </Button>
-          </div>
+          </div> */}
         </div>
         
         <div className="flex items-center space-x-4 text-sm text-text-secondary">

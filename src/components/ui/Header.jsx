@@ -12,7 +12,7 @@ const Header = () => {
     { name: "Home", path: "/homepage", icon: "Home" },
     { name: "About Y-Tech", path: "/about-y-tech", icon: "Users" },
     { name: "Services", path: "/services-overview", icon: "Settings" },
-    { name: "Service Areas", path: "/service-areas", icon: "MapPin" },
+    // { name: "Service Areas", path: "/service-areas", icon: "MapPin" },
     { name: "Products", path: "/products-showcase", icon: "Package" },
     { name: "Terms", path: "/terms", icon: "FileCheck" },
   ];

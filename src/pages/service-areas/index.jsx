@@ -273,7 +273,7 @@ const ServiceAreas = () => {
         </section>
 
         {/* Service Areas Grid */}
-        <section className="py-16 bg-muted/30">
+        {/* <section className="py-16 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 lg:px-6">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-text-primary mb-4">
@@ -295,7 +295,7 @@ const ServiceAreas = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Service Commitment Section */}
         <section className="py-16">

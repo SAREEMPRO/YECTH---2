@@ -3,7 +3,7 @@ import { BrowserRouter, Routes as RouterRoutes, Route } from "react-router-dom";
 import ScrollToTop from "components/ScrollToTop";
 import ErrorBoundary from "components/ErrorBoundary";
 import NotFound from "pages/NotFound";
-import ServiceAreas from './pages/service-areas';
+// import ServiceAreas from './pages/service-areas';
 import ContactSupport from './pages/contact-support';
 import ProductsShowcase from './pages/products-showcase';
 import ServicesOverview from './pages/services-overview';
@@ -19,7 +19,7 @@ const Routes = () => {
       <RouterRoutes>
         {/* Define your route here */}
         <Route path="/" element={<Homepage />} />
-        <Route path="/service-areas" element={<ServiceAreas />} />
+        {/* <Route path="/service-areas" element={<ServiceAreas />} /> */}
         <Route path="/contact-support" element={<ContactSupport />} />
         <Route path="/products-showcase" element={<ProductsShowcase />} />
         <Route path="/services-overview" element={<ServicesOverview />} />
