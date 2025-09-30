@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FAFAFA; /* gray-50 */
+    --color-foreground: #212121; /* gray-800 */
+    --color-border: #E0E0E0; /* gray-300 */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #1565C0; /* blue-700 */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #212121; /* gray-800 */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #212121; /* gray-800 */
+    
+    /* Muted Colors */
+    --color-muted: #F5F5F5; /* gray-100 */
+    --color-muted-foreground: #757575; /* gray-500 */
+    
+    /* Primary Colors */
+    --color-primary: #1565C0; /* blue-700 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #0D47A1; /* blue-800 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #D32F2F; /* red-700 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #4CAF50; /* green-500 */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Success Colors */
+    --color-success: #2E7D32; /* green-800 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #F57C00; /* orange-600 */
+    --color-warning-foreground: #FFFFFF; /* white */
+    
+    /* Error Colors */
+    --color-error: #D32F2F; /* red-700 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Brand Colors */
+    --color-brand-orange: #FF9800; /* orange-500 */
+    --color-brand-orange-foreground: #FFFFFF; /* white */
+    --color-brand-orange-dark: #F57C00; /* orange-600 */
+    --color-brand-blue-dark: #0D47A1; /* blue-800 */
+    
+    /* Surface Colors */
+    --color-surface: #FFFFFF; /* white */
+    --color-surface-foreground: #212121; /* gray-800 */
+    
+    /* Text Colors */
+    --color-text-primary: #212121; /* gray-800 */
+    --color-text-secondary: #757575; /* gray-500 */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .btn-emergency {
+    @apply bg-brand-orange hover:bg-brand-orange-dark text-brand-orange-foreground font-semibold px-6 py-3 rounded-lg transition-all duration-300 ease-out transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+
+  .card-elevation {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out hover:transform hover:-translate-y-2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-hover:hover {
+    box-shadow: 0 12px 24px rgba(21, 101, 192, 0.15);
+  }
+.trust-signal  {
+    @apply transform transition-all ease-out;
+  }
+
+  .trust-signal.animate-in {
+    @apply scale-100 opacity-100;
+  }
+.trust-signal.animate-out  {
+    @apply opacity-0;
+  }
+
+  .pulse-emergency {
+    animation: pulse-emergency 2s infinite;
+  }
+
+  @keyframes pulse-emergency {
+    0%, 100% {
+      transform: scale(1);
+      background: var(--color-brand-orange);
+    }
+    50% {
+      transform: scale(1.05);
+      background: var(--color-brand-orange-dark);
+    }
+  }
+
+  .smooth-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .micro-confirm {
+    transition: transform 0.2s ease-out;
+  }
+
+  .micro-confirm:active {
+    transform: scale(0.95);
+  }
+
+  .content-reveal {
+    transition: all 0.4s ease;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
