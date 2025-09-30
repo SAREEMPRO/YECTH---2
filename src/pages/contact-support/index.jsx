@@ -8,6 +8,7 @@ import SupportCenter from './components/SupportCenter';
 import CallbackScheduler from './components/CallbackScheduler';
 import Icon from '../../components/AppIcon';
 import Logo from "../../../Logo.png"
+
 const ContactSupport = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -24,6 +25,7 @@ const ContactSupport = () => {
         <meta name="keywords" content="Y-Tech contact, IT support Tamil Nadu, computer repair Vellore, emergency IT support, AMC services, technical support" />
       </Helmet>
       <Header />
+      
       {/* Hero Section */}
       <section className="pt-20 pb-12 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
@@ -37,7 +39,7 @@ const ContactSupport = () => {
               </h1>
             </div>
             <p className="text-lg text-text-secondary max-w-3xl mx-auto mb-8">
-              Get in touch with Y-Tech Computer Solutions. We're here to help with all your IT needs across Tamil Nadu with 24/7 emergency support and comprehensive service options.
+              Get in touch with Y-Tech Computer. We're here to help with all your IT needs across Tamil Nadu with 24/7 emergency support and comprehensive service options.
             </p>
 
             {/* Quick Action Cards */}
@@ -81,6 +83,101 @@ const ContactSupport = () => {
           </div>
         </div>
       </section>
+
+         {/* Location & Map Section */}
+      <section className="py-12 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl lg:text-3xl font-bold text-text-primary mb-4">
+              Visit Our Locations
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto">
+              Find us across Tamil Nadu with convenient locations in major cities. Get directions and contact information for each service center.
+            </p>
+          </div>
+          
+          {/* Branch Information Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {/* Main Branch */}
+            <div className="bg-surface rounded-xl shadow-card p-6">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Icon name="Building" size={20} className="text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-text-primary">Y-Tech Computer</h3>
+                  <p className="text-sm text-text-secondary">Head Office</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-2">
+                  <Icon name="MapPin" size={16} className="text-text-secondary mt-0.5 flex-shrink-0" />
+                  <p className="text-text-secondary text-sm">
+                    Vellore, Tamil Nadu, India
+                  </p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Icon name="Phone" size={16} className="text-text-secondary flex-shrink-0" />
+                  <a href="tel:+919092619444" className="text-primary hover:text-primary-dark text-sm">
+                    +91 90926 19444
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Icon name="Phone" size={16} className="text-text-secondary flex-shrink-0" />
+                  <a href="tel:+919894291164" className="text-primary hover:text-primary-dark text-sm">
+                    +91 98942 91164
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Icon name="Clock" size={16} className="text-text-secondary flex-shrink-0" />
+                  <span className="text-text-secondary text-sm">24/7 Emergency Support</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Branch Office */}
+            <div className="bg-surface rounded-xl shadow-card p-6">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-10 h-10 bg-brand-orange/10 rounded-lg flex items-center justify-center">
+                  <Icon name="Store" size={20} className="text-brand-orange" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-text-primary">M/S. ANANTHAR SYSTEMS</h3>
+                  <p className="text-sm text-text-secondary">Branch Office</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-2">
+                  <Icon name="MapPin" size={16} className="text-text-secondary mt-0.5 flex-shrink-0" />
+                  <p className="text-text-secondary text-sm">
+                    No.17c/14, MF. Road, Navalpur, Ranipet, Walaja TK
+                  </p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Icon name="Phone" size={16} className="text-text-secondary flex-shrink-0" />
+                  <a href="tel:+919092619444" className="text-primary hover:text-primary-dark text-sm">
+                    +91 90926 19444
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Icon name="Phone" size={16} className="text-text-secondary flex-shrink-0" />
+                  <a href="tel:+919894291164" className="text-primary hover:text-primary-dark text-sm">
+                    +91 98942 91164
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Icon name="Clock" size={16} className="text-text-secondary flex-shrink-0" />
+                  <span className="text-text-secondary text-sm">24/7 Emergency Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <LocationMap />
+        </div>
+      </section>
+
+
       {/* Main Content */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
@@ -96,26 +193,12 @@ const ContactSupport = () => {
               <div id="contact-form">
                 <ContactForm />
               </div>
-
-            
             </div>
           </div>
         </div>
       </section>
-      {/* Location & Map Section */}
-      <section className="py-12 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl lg:text-3xl font-bold text-text-primary mb-4">
-              Visit Our Locations
-            </h2>
-            <p className="text-text-secondary max-w-2xl mx-auto">
-              Find us across Tamil Nadu with convenient locations in major cities. Get directions and contact information for each service center.
-            </p>
-          </div>
-          <LocationMap />
-        </div>
-      </section>
+
+   
       {/* Support Center Section */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
@@ -130,6 +213,7 @@ const ContactSupport = () => {
           <SupportCenter />
         </div>
       </section>
+
       {/* Response Time Guarantees */}
       <section className="py-12 bg-primary/5">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
@@ -193,6 +277,7 @@ const ContactSupport = () => {
           </div>
         </div>
       </section>
+
       {/* Footer CTA */}
       <section className="py-12 bg-gradient-to-r from-primary to-secondary">
         <div className="max-w-4xl mx-auto px-4 lg:px-6 text-center">
@@ -220,146 +305,164 @@ const ContactSupport = () => {
           </div>
         </div>
       </section>
-       <footer className="bg-text-primary text-primary-foreground py-12">
-              <div className="max-w-7xl mx-auto px-4 lg:px-6">
-                <div className="grid md:grid-cols-4 gap-8">
-                  {/* Company Info */}
-                  <div className="space-y-4">
-                    <div className="">
-                      {/* ⬇️ Increase logo box from 2.5 rem (10) to 4 rem (16) */}
-                      <img
-                        src={Logo}
-                        alt=""
-                        style={{
-                          width: "14rem",
-                          height: "7rem",
-                          marginLeft: "-5.1rem",
-                        }}
-                      />
-      
-                      <div>
-                        <h3 className="text-xl font-bold">Y-Tech</h3>
-                        <p className="text-sm opacity-80">Computer</p>
-                      </div>
-                    </div>
-                    <p className="text-sm opacity-90 leading-relaxed">
-                      Your trusted technology partner since 2004, providing
-                      comprehensive IT solutions across Tamil Nadu with 2-hour
-                      emergency response guarantee.
-                    </p>
-                  </div>
-      
-                  {/* Quick Links */}
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-lg">Quick Links</h4>
-                    <ul className="space-y-2 text-sm">
-                      <li>
-                        <a
-                          href="/about-y-tech"
-                          className="opacity-80 hover:opacity-100 transition-opacity"
-                        >
-                          About Y-Tech
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/services-overview"
-                          className="opacity-80 hover:opacity-100 transition-opacity"
-                        >
-                          Our Services
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/service-areas"
-                          className="opacity-80 hover:opacity-100 transition-opacity"
-                        >
-                          Service Areas
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/products-showcase"
-                          className="opacity-80 hover:opacity-100 transition-opacity"
-                        >
-                          Products
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/contact-support"
-                          className="opacity-80 hover:opacity-100 transition-opacity"
-                        >
-                          Contact Us
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-      
-                  {/* Services */}
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-lg">Services</h4>
-                    <ul className="space-y-2 text-sm">
-                      <li className="opacity-80">Computer & Laptop Repair</li>
-                      <li className="opacity-80">Networking Solutions</li>
-                      <li className="opacity-80">AMC Services</li>
-                      <li className="opacity-80">Data Recovery</li>
-                      <li className="opacity-80">Emergency Support</li>
-                    </ul>
-                  </div>
-      
-                  {/* Contact Info */}
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-lg">Contact Info</h4>
-                    <div className="space-y-3 text-sm">
-                      <div className="flex items-start space-x-2">
-                        <span className="opacity-60">📍</span>
-                        <span className="opacity-90">Vellore, Tamil Nadu, India</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <span className="opacity-60">📞</span>
-                        <a
-                          href="tel:+919092619444"
-                          className="opacity-90 hover:opacity-100"
-                        >
-                          +91 90926 19444
-                        </a>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <span className="opacity-60">✉️</span>
-                        <a
-                          href="mailto:support@ytech.com"
-                          className="opacity-90 hover:opacity-100"
-                        >
-                          support@ytech.com
-                        </a>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <span className="opacity-60">🕒</span>
-                        <span className="opacity-90">24/7 Emergency Support</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-                {/* Bottom Bar */}
-                <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                  <p className="text-sm opacity-80">
-                    © {new Date()?.getFullYear()} Y-Tech Computer. All rights
-                    reserved.
-                  </p>
-                  <div className="flex items-center space-x-4 mt-4 md:mt-0">
-                    <span className="text-sm opacity-80">Emergency Hotline:</span>
-                    <a
-                      href="tel:+919092619444"
-                      className="bg-brand-orange text-brand-orange-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:bg-brand-orange-dark transition-colors"
-                    >
-                     +91 98942 91164
-                    </a>
-                  </div>
+
+      {/* Footer */}
+      <footer className="bg-text-primary text-primary-foreground py-12">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6">
+          <div className="grid md:grid-cols-4 gap-8">
+            {/* Company Info */}
+            <div className="space-y-4">
+              <div className="">
+                <img
+                  src={Logo}
+                  alt=""
+                  style={{
+                    width: "14rem",
+                    height: "7rem",
+                    marginLeft: "-5.1rem",
+                  }}
+                />
+                <div>
+                  <h3 className="text-xl font-bold">Y-Tech</h3>
+                  <p className="text-sm opacity-80">Computer</p>
                 </div>
               </div>
-            </footer>
+              <p className="text-sm opacity-90 leading-relaxed">
+                Your trusted technology partner since 2004, providing
+                comprehensive IT solutions across Tamil Nadu with 2-hour
+                emergency response guarantee.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg">Quick Links</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="/about-y-tech"
+                    className="opacity-80 hover:opacity-100 transition-opacity"
+                  >
+                    About Y-Tech
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/services-overview"
+                    className="opacity-80 hover:opacity-100 transition-opacity"
+                  >
+                    Our Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/service-areas"
+                    className="opacity-80 hover:opacity-100 transition-opacity"
+                  >
+                    Service Areas
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/products-showcase"
+                    className="opacity-80 hover:opacity-100 transition-opacity"
+                  >
+                    Products
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contact-support"
+                    className="opacity-80 hover:opacity-100 transition-opacity"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg">Services</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="opacity-80">Computer & Laptop Repair</li>
+                <li className="opacity-80">Networking Solutions</li>
+                <li className="opacity-80">AMC Services</li>
+                <li className="opacity-80">Data Recovery</li>
+                <li className="opacity-80">Emergency Support</li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg">Contact Info</h4>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-start space-x-2">
+                  <span className="opacity-60">📍</span>
+                  <div>
+                    <span className="opacity-90 block">Vellore, Tamil Nadu</span>
+                    <span className="opacity-70 text-xs">Head Office</span>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="opacity-60">📍</span>
+                  <div>
+                    <span className="opacity-90 block">Ranipet, Walaja TK</span>
+                    <span className="opacity-70 text-xs">Branch Office</span>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="opacity-60">📞</span>
+                  <a
+                    href="tel:+919092619444"
+                    className="opacity-90 hover:opacity-100"
+                  >
+                    +91 90926 19444
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="opacity-60">📞</span>
+                  <a
+                    href="tel:+919894291164"
+                    className="opacity-90 hover:opacity-100"
+                  >
+                    +91 98942 91164
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="opacity-60">✉️</span>
+                  <a
+                    href="mailto:support@ytech.com"
+                    className="opacity-90 hover:opacity-100"
+                  >
+                    support@ytech.com
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="opacity-60">🕒</span>
+                  <span className="opacity-90">24/7 Emergency Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm opacity-80">
+              © {new Date()?.getFullYear()} Y-Tech Computer. All rights reserved.
+            </p>
+            <div className="flex items-center space-x-4 mt-4 md:mt-0">
+              <span className="text-sm opacity-80">Emergency Hotline:</span>
+              <a
+                href="tel:+919092619444"
+                className="bg-brand-orange text-brand-orange-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:bg-brand-orange-dark transition-colors"
+              >
+               +91 98942 91164
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -148,14 +148,7 @@ const SupportCenter = () => {
         {/* FAQ Tab */}
         {activeTab === 'faq' && (
           <div className="space-y-6">
-            {/* Search */}
-            <Input
-              type="search"
-              placeholder="Search frequently asked questions..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e?.target?.value)}
-              className="mb-6"
-            />
+       
 
             {/* FAQ Categories */}
             {filteredFaqs?.map((category, categoryIndex) => (
