@@ -25,13 +25,205 @@ const Homepage = () => {
       </Helmet>
       <Header />
       <EmergencyBanner />
-      <main className="pt-4">
-        <HeroSection />
-        <ServicesGrid />
-        <TrustIndicators />
-        <TestimonialCarousel />
-        <QuickActionCTA />
-      </main>
+   <main className="pt-4">
+  <HeroSection />
+  <ServicesGrid />
+  <TrustIndicators />
+
+  {/* ⬇️ Stylish Clients Section */}
+<section className="relative py-20 bg-surface">
+  {/* Subtle background accents */}
+  <div className="pointer-events-none absolute inset-0">
+    <div className="mx-auto max-w-7xl h-full opacity-70">
+      <div className="absolute -top-8 left-6 h-44 w-44 rounded-full bg-brand-orange/10 blur-3xl" />
+      <div className="absolute bottom-0 right-10 h-52 w-52 rounded-full bg-cyan-400/10 blur-3xl" />
+    </div>
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-4 lg:px-6">
+    {/* Header */}
+    <div className="text-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-tight">
+        Our Trusted Clients
+      </h2>
+      <p className="mt-3 text-text-secondary max-w-2xl mx-auto">
+        Serving industries, institutions, and organizations across Tamil Nadu with a strong reputation for reliability and 24/7 emergency support.
+      </p>
+    </div>
+
+    {/* Grid */}
+    <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 lg:gap-8">
+      {/* Card base class for reuse */}
+      {/* Industrial */}
+      <div className="group rounded-2xl border border-gray-200 bg-white/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 focus-within:ring-2 focus-within:ring-brand-orange/30">
+  <div className="rounded-t-2xl bg-gradient-to-r from-blue-50 to-sky-100 p-5 border-b border-gray-100">
+          <div className="flex items-center justify-between">
+            <h3 className="text-base md:text-lg font-semibold text-brand-primary">
+              🏭 Industrial Clients
+            </h3>
+      <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
+              5
+            </span>
+          </div>
+        </div>
+        <div className="p-6">
+          <ul className="text-sm text-text-secondary divide-y divide-gray-100">
+            <li className="py-2">Indoocool Ranipet</li>
+            <li className="py-2">Nidec India Precision Tools Ltd.</li>
+            <li className="py-2">Amper Electric Scooters</li>
+            <li className="py-2">TCS</li>
+            <li className="py-2">Nifo South India Manufacture</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Government */}
+      <div className="group rounded-2xl border border-gray-200 bg-white/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 focus-within:ring-2 focus-within:ring-brand-orange/30">
+  <div className="rounded-t-2xl bg-gradient-to-r from-blue-50 to-sky-100 p-5 border-b border-gray-100">
+          <div className="flex items-center justify-between">
+            <h3 className="text-base md:text-lg font-semibold text-brand-primary">
+              🏢 Government Sectors
+            </h3>
+      <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
+              8
+            </span>
+          </div>
+        </div>
+        <div className="p-6">
+          <ul className="text-sm text-text-secondary grid grid-cols-1 gap-2">
+            <li className="flex items-center gap-2">
+              <span>Collector Office</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span>RTO Office</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span>EB Office</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span>DRO Office</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span>Forest Office</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span>NH Office</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span>Corporation</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span>Female Jail</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Education */}
+      <div className="group rounded-2xl border border-gray-200 bg-white/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 focus-within:ring-2 focus-within:ring-brand-orange/30">
+  <div className="rounded-t-2xl bg-gradient-to-r from-blue-50 to-sky-100 p-5 border-b border-gray-100">
+          <div className="flex items-center justify-between">
+            <h3 className="text-base md:text-lg font-semibold text-brand-primary">
+              🎓 Educational Institutions
+            </h3>
+      <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
+              7
+            </span>
+          </div>
+        </div>
+        <div className="p-6">
+          <ul className="text-sm text-text-secondary divide-y divide-gray-100">
+            <li className="py-2">Don Bosco Groups</li>
+            <li className="py-2">Sami Vikenda Serkadu</li>
+            <li className="py-2">Thiruvalur University</li>
+            <li className="py-2">Holycross Matric School</li>
+            <li className="py-2">St. Mark School</li>
+            <li className="py-2">NTTF</li>
+            <li className="py-2">Oxford</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Hospitals */}
+      <div className="group rounded-2xl border border-gray-200 bg-white/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 focus-within:ring-2 focus-within:ring-brand-orange/30">
+  <div className="rounded-t-2xl bg-gradient-to-r from-blue-50 to-sky-100 p-5 border-b border-gray-100">
+          <div className="flex items-center justify-between">
+            <h3 className="text-base md:text-lg font-semibold text-brand-primary">
+              🏥 Hospitals
+            </h3>
+      <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
+              4
+            </span>
+          </div>
+        </div>
+        <div className="p-6">
+          <ul className="text-sm text-text-secondary divide-y divide-gray-100">
+            <li className="py-2">Akshaya</li>
+            <li className="py-2">Saradha</li>
+            <li className="py-2">Annai Pet Shops</li>
+            <li className="py-2">Rajan & Co</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Auditors */}
+<div className="group rounded-2xl border border-gray-200 bg-white/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 focus-within:ring-2 focus-within:ring-brand-orange/30">
+  <div className="rounded-t-2xl bg-gradient-to-r from-blue-50 to-sky-100 p-5 border-b border-gray-100">
+          <div className="flex items-center justify-between">
+            <h3 className="text-base md:text-lg font-semibold text-brand-primary">
+              📊 Auditor Offices
+            </h3>
+      <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
+              3
+            </span>
+          </div>
+        </div>
+        <div className="p-6">
+          <ul className="text-sm text-text-secondary divide-y divide-gray-100">
+            <li className="py-2">R.K. Associates</li>
+            <li className="py-2">Mani & Co</li>
+            <li className="py-2">Raja Varman</li>
+          </ul>
+        </div>
+      </div>
+
+{/* Small Scale */}
+<div className="group rounded-2xl border border-gray-200 bg-white/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 focus-within:ring-2 focus-within:ring-brand-orange/30">
+  <div className="rounded-t-2xl bg-gradient-to-r from-blue-50 to-sky-100 p-5 border-b border-gray-100">
+    <div className="flex items-center justify-between">
+      <h3 className="text-base md:text-lg font-semibold text-brand-primary">
+        ⚙️ Small Scale Industries
+      </h3>
+      <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
+        3
+      </span>
+    </div>
+  </div>
+  <div className="p-6">
+    <ul className="text-sm text-text-secondary divide-y divide-gray-100">
+      <li className="py-2">C-Tech Engineering</li>
+      <li className="py-2">B&B</li>
+      <li className="py-2">Sai Subratham</li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+
+    {/* Footnote */}
+    <div className="mt-12 text-center">
+      <p className="text-sm md:text-base text-text-secondary">
+        Clients spread across <span className="font-medium text-text-primary">Vellore, Thirupathur, Vaniyambadi, Sri Perumbudur, Gudiyatham, Ranipet</span> and more.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <TestimonialCarousel />
+  <QuickActionCTA />
+</main>
+
       {/* Footer */}
       <footer className="bg-text-primary text-primary-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">

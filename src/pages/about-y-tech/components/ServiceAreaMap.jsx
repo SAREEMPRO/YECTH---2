@@ -5,24 +5,41 @@ const ServiceAreaMap = () => {
   const [selectedArea, setSelectedArea] = useState(null);
 
   const serviceAreas = [
-    {
-      id: 1,
-      name: "Vellore",
-      district: "Vellore District",
-      responseTime: "30 minutes",
-      coverage: "Complete",
-      coordinates: { lat: 12.9165, lng: 79.1325 },
-      services: [
-        "Emergency Support",
-        "AMC Services",
-        "Hardware Repair",
-        "Networking",
-      ],
-      clientCount: "50+",
-      description:
-        "Our headquarters location with full-service workshop and immediate response capability.",
-    },
-  ];
+  {
+    id: 1,
+    name: "M/S. ANANTHAR SYSTEMS",
+    district: "Vellore District",
+    responseTime: "30 minutes",
+    coverage: "Complete",
+    coordinates: { lat: 12.936, lng: 79.333 },
+    services: [
+      "Emergency Support",
+      "Hardware Repair",
+      "Networking",
+    ],
+    clientCount: "30+",
+    description:
+      "Branch office at Ranipet with dedicated technicians and 24/7 support.",
+  },
+  {
+    id: 2,
+    name: "Y-Tech Computer",
+    district: "Vellore District",
+    responseTime: "30 minutes",
+    coverage: "Complete",
+    coordinates: { lat: 12.9165, lng: 79.1325 },
+    services: [
+      "Emergency Support",
+      "AMC Services",
+      "Hardware Repair",
+      "Networking",
+    ],
+    clientCount: "50+",
+    description:
+      "Our headquarters location with full-service workshop and immediate response capability.",
+  },
+];
+
   const handleAreaClick = (area) => {
     setSelectedArea(selectedArea?.id === area?.id ? null : area);
   };

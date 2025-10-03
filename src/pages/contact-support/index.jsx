@@ -30,15 +30,16 @@ const ContactSupport = () => {
       <section className="pt-20 pb-12 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="text-center mb-12">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <Icon name="Headphones" size={24} className="text-primary-foreground" />
-              </div>
-              <h1 className="text-3xl lg:text-4xl font-bold text-text-primary">
-                Contact & Support
-              </h1>
-            </div>
-            <p className="text-lg text-text-secondary max-w-3xl mx-auto mb-8">
+     <div className="flex items-center justify-center space-x-3 mb-4">
+  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+    <Icon name="Headphones" size={24} className="text-primary-foreground" />
+  </div>
+  <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-text-primary max-[250px]:text-xl">
+    Contact & Support
+  </h1>
+</div>
+
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto mb-8 ">
               Get in touch with Y-Tech Computer. We're here to help with all your IT needs across Tamil Nadu with 24/7 emergency support and comprehensive service options.
             </p>
 
