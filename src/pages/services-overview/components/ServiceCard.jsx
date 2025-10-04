@@ -53,10 +53,7 @@ const ServiceCard = ({ service, onLearnMore, onBookNow }) => {
           </div>
           <div>
             <h3 className="text-lg font-semibold text-text-primary">{title}</h3>
-            <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${getUrgencyColor(urgencyLevel)}`}>
-              {urgencyLevel === 'emergency' && <Icon name="Zap" size={12} className="mr-1" />}
-              {urgencyLevel?.charAt(0)?.toUpperCase() + urgencyLevel?.slice(1)}
-            </span>
+           
           </div>
         </div>
       </div>

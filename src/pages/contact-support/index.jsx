@@ -231,7 +231,7 @@ const ContactSupport = () => {
             {[
               {
                 type: 'Emergency Support',
-                time: 'Within 2 Hours',
+                time: 'Within Few Hours',
                 description: 'Critical system failures, security breaches',
                 icon: 'AlertTriangle',
                 color: 'brand-orange',
@@ -329,7 +329,7 @@ const ContactSupport = () => {
                 </div>
               </div>
               <p className="text-sm opacity-90 leading-relaxed">
-                Your trusted technology partner since 2004, providing
+                Your trusted technology partner since 2005, providing
                 comprehensive IT solutions across Tamil Nadu with 2-hour
                 emergency response guarantee.
               </p>
@@ -433,10 +433,10 @@ const ContactSupport = () => {
                 <div className="flex items-center space-x-2">
                   <span className="opacity-60">✉️</span>
                   <a
-                    href="mailto:support@ytech.com"
+                    href="mailto:support@ytechcomputer.com"
                     className="opacity-90 hover:opacity-100"
                   >
-                    support@ytech.com
+                    support@ytechcomputer.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">

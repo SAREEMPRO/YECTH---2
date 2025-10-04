@@ -180,7 +180,7 @@ const ServicesOverview = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Services Overview - Y-Tech Computer | Complete IT Solutions</title>
-        <meta name="description" content="Comprehensive IT services including computer repair, networking solutions, AMC contracts, and 24/7 emergency support. Serving Tamil Nadu since 2004." />
+        <meta name="description" content="Comprehensive IT services including computer repair, networking solutions, AMC contracts, and 24/7 emergency support. Serving Tamil Nadu since 2005." />
         <meta name="keywords" content="IT services, computer repair, networking, AMC, emergency support, Vellore, Tamil Nadu" />
       </Helmet>
       <Header />
@@ -199,7 +199,7 @@ const ServicesOverview = () => {
               </h1>
               <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
                 From emergency repairs to comprehensive maintenance contracts, we provide complete IT solutions 
-                that keep your business running smoothly. Trusted by 50+ businesses since 2004.
+                that keep your business running smoothly. Trusted by 50+ businesses since 2005.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -229,7 +229,7 @@ const ServicesOverview = () => {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { icon: 'Users', value: '50+', label: 'Happy Clients' },
-                { icon: 'Clock', value: '2 Hours', label: 'Emergency Response' },
+{ icon: 'Cpu', value: '10+', label: 'IT Services' },
                 { icon: 'Award', value: '15+ Years', label: 'Experience' },
                 { icon: 'Shield', value: '99.8%', label: 'Success Rate' }
               ]?.map((stat, index) => (
@@ -348,8 +348,8 @@ const ServicesOverview = () => {
                 </div>
               </div>
               <p className="text-sm opacity-90 leading-relaxed">
-                Your trusted technology partner since 2004, providing
-                comprehensive IT solutions across Tamil Nadu with 2-hour
+                Your trusted technology partner since 2005, providing
+                comprehensive IT solutions across Tamil Nadu with
                 emergency response guarantee.
               </p>
             </div>
@@ -433,10 +433,10 @@ const ServicesOverview = () => {
                 <div className="flex items-center space-x-2">
                   <span className="opacity-60">✉️</span>
                   <a
-                    href="mailto:support@ytech.com"
+                    href="mailto:support@ytechcomputer.com"
                     className="opacity-90 hover:opacity-100"
                   >
-                    support@ytech.com
+                    support@ytechcomputer.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">

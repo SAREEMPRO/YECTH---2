@@ -9,7 +9,7 @@ const ContactInfo = () => {
       icon: 'Phone',
       title: '24/7 Emergency Hotline',
       value: '+91 90926 19444',
-      description: 'Critical IT issues - 2 hour response guarantee',
+      description: 'Critical IT issues - response guarantee',
       action: () => window.open('tel:+919092619444', '_self'),
       bgColor: 'bg-brand-orange/10',
       iconColor: 'text-brand-orange',

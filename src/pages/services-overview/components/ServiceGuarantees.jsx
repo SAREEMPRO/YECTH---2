@@ -5,8 +5,8 @@ const ServiceGuarantees = () => {
   const guarantees = [
     {
       icon: 'Clock',
-      title: '2-Hour Emergency Response',
-      description: 'Critical IT issues resolved within 2 hours or your money back',
+      title: 'Emergency Response',
+      description: 'Critical IT issues resolved or your money back',
       highlight: 'Emergency Support'
     },
     {
@@ -24,7 +24,7 @@ const ServiceGuarantees = () => {
     {
       icon: 'Users',
       title: '19+ Years Experience',
-      description: 'Trusted by 5000+ businesses across Tamil Nadu since 2004',
+      description: 'Trusted by 50+ businesses across Tamil Nadu since 2005',
       highlight: 'Proven Track Record'
     }
   ];

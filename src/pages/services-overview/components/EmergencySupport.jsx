@@ -11,8 +11,8 @@ const EmergencySupport = ({ onEmergencyCall, onScheduleCallback }) => {
     },
     {
       icon: 'Zap',
-      title: '2-Hour Response',
-      description: 'Guaranteed on-site response within 2 hours'
+      title: 'Response',
+      description: 'Guaranteed on-site response'
     },
     {
       icon: 'Phone',

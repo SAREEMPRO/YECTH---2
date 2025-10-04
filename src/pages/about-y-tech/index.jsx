@@ -19,13 +19,13 @@ const AboutYTech = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>About Y-Tech - Your Technology Partner Since 2004 | Mr. Perumal's Story</title>
+        <title>About Y-Tech - Your Technology Partner Since 2005 | Mr. Perumal's Story</title>
         <meta 
           name="description" 
-          content="Meet Mr. Perumal and learn about Y-Tech's 20-year journey from a small computer repair shop to Tamil Nadu's trusted IT solutions provider. Serving 2000+ businesses across 6 districts with 2-hour response guarantee." 
+          content="Meet Mr. Perumal and learn about Y-Tech's 20-year journey from a small computer repair shop to Tamil Nadu's trusted IT solutions provider. Serving 2000+ businesses across 6 districts with response guarantee." 
         />
         <meta name="keywords" content="Y-Tech Computer, Mr. Perumal, IT services Tamil Nadu, computer repair Vellore, technology partner, authorized service center" />
-        <meta property="og:title" content="About Y-Tech - Your Technology Partner Since 2004" />
+        <meta property="og:title" content="About Y-Tech - Your Technology Partner Since 2005" />
         <meta property="og:description" content="Discover Y-Tech's authentic story and Mr. Perumal's commitment to making technology simple and accessible for businesses across Tamil Nadu." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/about-y-tech" />
@@ -179,10 +179,9 @@ const AboutYTech = () => {
             <hr className="mt-4 border-border/60" />
 
             <ul className="mt-4 space-y-2 text-sm text-text-secondary">
-              {cat.items.map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <span className="mt-1 size-1.5 shrink-0 rounded-full bg-primary/60" />
-                  <span className="antialiased leading-relaxed">{item}</span>
+              {cat.items.map((item,idx) => (
+                <li key={idx} className="flex items-start gap-2">
+                  {idx+1}.<span className="antialiased leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
@@ -243,8 +242,8 @@ const AboutYTech = () => {
                    </div>
                  </div>
                  <p className="text-sm opacity-90 leading-relaxed">
-                   Your trusted technology partner since 2004, providing
-                   comprehensive IT solutions across Tamil Nadu with 2-hour
+                   Your trusted technology partner since 2005, providing
+                   comprehensive IT solutions across Tamil Nadu with
                    emergency response guarantee.
                  </p>
                </div>
@@ -328,10 +327,10 @@ const AboutYTech = () => {
                    <div className="flex items-center space-x-2">
                      <span className="opacity-60">✉️</span>
                      <a
-                       href="mailto:support@ytech.com"
+                       href="mailto:support@ytechcomputer.com"
                        className="opacity-90 hover:opacity-100"
                      >
-                       support@ytech.com
+                       support@ytechcomputer.com
                      </a>
                    </div>
                    <div className="flex items-center space-x-2">

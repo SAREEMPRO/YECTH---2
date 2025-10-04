@@ -20,30 +20,22 @@ const HeroSection = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                 <Icon name="Award" size={16} />
-                <span>Trusted Since 2004</span>
+                <span>Trusted Since 2005</span>
               </div>
               
               <h1 className="text-4xl lg:text-6xl font-bold text-text-primary leading-tight">
                 Your Technology
-                <span className="text-primary block">Partner Since 2004</span>
+                <span className="text-primary block">Partner Since 2005</span>
               </h1>
               
               <p className="text-xl text-text-secondary leading-relaxed">
-                Complete IT solutions for businesses across Tamil Nadu. From emergency repairs to comprehensive AMC services, we keep your technology running smoothly with our 2-hour response guarantee.
+                Complete IT solutions for businesses across Tamil Nadu. From emergency repairs to comprehensive AMC services, we keep your technology running smoothly with our response guarantee.
               </p>
             </div>
 
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-6 py-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-success/10 rounded-full flex items-center justify-center">
-                  <Icon name="Clock" size={20} className="text-success" />
-                </div>
-                <div>
-                  <p className="font-semibold text-text-primary">2-Hour Response</p>
-                  <p className="text-sm text-text-secondary">Emergency Support</p>
-                </div>
-              </div>
+           
               
               <div className="flex items-center space-x-2">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -100,7 +92,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Icon name="Mail" size={16} className="text-text-secondary" />
-                <span className="text-sm text-text-secondary">support@ytech.com</span>
+                <span className="text-sm text-text-secondary">support@ytechcomputer.com</span>
               </div>
             </div>
           </div>
@@ -122,7 +114,7 @@ const HeroSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-text-primary">Mr. Perumal</h3>
-                    <p className="text-sm text-text-secondary">Founder & Lead Technician</p>
+                    <p className="text-sm text-text-secondary">Proprietor D.E.E., BBA</p>
                     <div className="flex items-center space-x-1 mt-1">
                       <Icon name="Star" size={12} className="text-warning fill-current" />
                       <Icon name="Star" size={12} className="text-warning fill-current" />

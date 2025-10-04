@@ -12,8 +12,9 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-5xl font-bold text-text-primary leading-tight">
                 Meet Mr. Perumal
-                <span className="block text-primary">Your Technology Partner Since 2004</span>
               </h1>
+                              <span className="block text-primary">Proprietor D.E.E., BBA</span>
+
               <p className="text-lg text-text-secondary leading-relaxed">
                 From a small computer repair shop to Tamil Nadu's trusted IT solutions provider, 
                 Y-Tech has been transforming businesses through reliable technology support for nearly two decades.
@@ -43,10 +44,7 @@ const HeroSection = () => {
                 <div className="text-2xl font-bold text-primary">200+</div>
                 <div className="text-sm text-text-secondary">Businesses Served</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">2 Hours</div>
-                <div className="text-sm text-text-secondary">Response Time</div>
-              </div>
+          
             </div>
           </div>
 

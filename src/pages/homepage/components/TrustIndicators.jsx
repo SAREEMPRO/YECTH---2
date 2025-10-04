@@ -7,7 +7,7 @@ const TrustIndicators = () => {
       id: 1,
       number: "15+",
       label: "Years Experience",
-      description: "Serving Tamil Nadu since 2004",
+      description: "Serving Tamil Nadu since 2005",
       icon: "Calendar",
       color: "primary"
     },
@@ -19,14 +19,15 @@ const TrustIndicators = () => {
       icon: "Users",
       color: "accent"
     },
-    {
-      id: 3,
-      number: "2 Hours",
-      label: "Response Time",
-      description: "Emergency support guarantee",
-      icon: "Clock",
-      color: "success"
-    },
+{
+  id: 3,
+  number: "40+",
+  label: "Projects Completed",
+  description: "Delivering excellence across Tamil Nadu",
+  icon: "Clock",
+  color: "success"
+}
+,
     {
       id: 4,
       number: "24/7",

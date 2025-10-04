@@ -15,7 +15,7 @@ const SupportCenter = () => {
       questions: [
         {
           question: 'What are your service response times?',
-          answer: `Our response times vary by service type:\n• Emergency Support: Within 2 hours (24/7)\n• Regular Service Requests: Within 4 hours\n• AMC Inquiries: Within 24 hours\n• General Inquiries: Within 48 hours\n\nFor AMC customers, we provide priority support with faster response times.`
+          answer: `Our response times vary by service type:\n• Emergency Support: (24/7)\n• Regular Service Requests: Within 4 hours\n• AMC Inquiries: Within 24 hours\n• General Inquiries: Within 48 hours\n\nFor AMC customers, we provide priority support with faster response times.`
         },
         {
           question: 'Do you provide on-site support?',

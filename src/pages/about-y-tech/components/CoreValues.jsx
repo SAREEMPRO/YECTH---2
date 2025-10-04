@@ -12,8 +12,8 @@ const CoreValues = () => {
     {
       icon: "Shield",
       title: "Unwavering Reliability",
-      description: "Since 2004, we've built our reputation on consistent, dependable service that businesses can count on day after day.",
-      example: "Maintaining 99.5% uptime for our AMC clients and never missing our 2-hour response commitment."
+      description: "Since 2005, we've built our reputation on consistent, dependable service that businesses can count on day after day.",
+      example: "Maintaining 99.5% uptime for our AMC clients and never missing our response commitment."
     },
     {
       icon: "Heart",
@@ -25,7 +25,7 @@ const CoreValues = () => {
       icon: "Clock",
       title: "Rapid Response",
       description: "When technology fails, every minute counts. Our emergency support ensures minimal downtime for your business operations.",
-      example: "24/7 availability with guaranteed 2-hour response time across all six service areas."
+      example: "24/7 availability with guaranteed response time across all six service areas."
     },
     {
       icon: "Users",

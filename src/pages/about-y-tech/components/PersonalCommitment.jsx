@@ -7,7 +7,7 @@ const PersonalCommitment = () => {
   const commitments = [
     {
       icon: "Clock",
-      title: "2-Hour Response Guarantee",
+      title: "Response Guarantee",
       description: "I personally ensure that every emergency call receives attention within 2 hours, regardless of the time or day."
     },
     {
@@ -113,7 +113,7 @@ const PersonalCommitment = () => {
                     </span>
                   </div>
                   <p className="text-xs text-white mt-1">
-                    Personally handling client relationships since 2004
+                    Personally handling client relationships since 2005
                   </p>
                 </div>
               </div>
