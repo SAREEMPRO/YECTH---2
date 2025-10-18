@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/ui/Header";
-import EmergencyBanner from "./components/EmergencyBanner";
 import HeroSection from "./components/HeroSection";
 import ServicesGrid from "./components/ServicesGrid";
 import TrustIndicators from "./components/TrustIndicators";
@@ -8,8 +7,76 @@ import TestimonialCarousel from "./components/TestimonialCarousel";
 import QuickActionCTA from "./components/QuickActionCTA";
 import Logo from "../../../Logo.png";
 import { Helmet } from "react-helmet";
+import { FaEye } from "react-icons/fa";
+import { motion } from "framer-motion";
+// Import your Firebase service
+import { visitorCountService } from "../../../Firebase";
 
 const Homepage = () => {
+  const [visitorCount, setVisitorCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Firebase visitor counter
+  useEffect(() => {
+    const updateVisitorCount = async () => {
+      try {
+        // Check if user already visited in this session
+        const hasVisited = sessionStorage.getItem('ytech_visited');
+        
+        if (!hasVisited) {
+          // Increment count in Firebase
+          const newCount = await visitorCountService.incrementVisitorCount();
+          if (newCount !== null) {
+            setVisitorCount(newCount);
+          } else {
+            // Fallback: get current count without incrementing
+            const currentCount = await visitorCountService.getVisitorCount();
+            setVisitorCount(currentCount);
+          }
+          
+          // Mark as visited in this session
+          sessionStorage.setItem('ytech_visited', 'true');
+        } else {
+          // User already visited in this session, just get the current count
+          const currentCount = await visitorCountService.getVisitorCount();
+          setVisitorCount(currentCount);
+        }
+        
+      } catch (error) {
+        console.error("Error updating visitor count:", error);
+        // Fallback to localStorage if Firebase fails
+        fallbackVisitorCount();
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    // Fallback function using localStorage
+    const fallbackVisitorCount = () => {
+      try {
+        const storedCount = localStorage.getItem('ytech_website_visitors');
+        
+        if (storedCount) {
+          const newCount = parseInt(storedCount) + 1;
+          localStorage.setItem('ytech_website_visitors', newCount.toString());
+          setVisitorCount(newCount);
+        } else {
+          localStorage.setItem('ytech_website_visitors', '1');
+          setVisitorCount(1);
+        }
+      } catch (error) {
+        setVisitorCount(1);
+      }
+    };
+
+    updateVisitorCount();
+  }, []);
+
+  // Format number with Indian numbering system
+  const formatNumber = (num) => {
+    return new Intl.NumberFormat('en-IN').format(num);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -24,140 +91,223 @@ const Homepage = () => {
         />
       </Helmet>
       <Header />
-      <EmergencyBanner />
-   <main className="pt-4">
-  <HeroSection />
-  <ServicesGrid />
-  <TrustIndicators />
+      
+      <main className="pt-4">
+        <HeroSection />
+        <ServicesGrid />
+        <TrustIndicators />
 
-  {/* ⬇️ Stylish Clients Section */}
-<section className="relative py-20 bg-surface">
-  {/* Background accents */}
-  <div className="pointer-events-none absolute inset-0">
-    <div className="mx-auto max-w-7xl h-full opacity-70">
-      <div className="absolute -top-8 left-6 h-44 w-44 rounded-full bg-brand-orange/10 blur-3xl" />
-      <div className="absolute bottom-0 right-10 h-52 w-52 rounded-full bg-cyan-400/10 blur-3xl" />
-    </div>
-  </div>
+        {/* Visitor Count Section */}
+        <section className="relative py-16 bg-gradient-to-b from-blue-50 via-blue-50 to-blue-100 overflow-hidden">
+          <div className="max-w-md mx-auto px-4 lg:px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="bg-white shadow-xl rounded-3xl p-10 text-center border border-blue-200 backdrop-blur-sm relative"
+            >
+              {/* Subtle background glow */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-blue-400/20 via-sky-200/20 to-transparent blur-3xl pointer-events-none" />
 
-  <div className="relative max-w-7xl mx-auto px-4 lg:px-6">
-    {/* Header */}
-    <div className="text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-tight">
-        Our Trusted Clients
-      </h2>
-      <p className="mt-3 text-text-secondary max-w-2xl mx-auto">
-        Serving industries, institutions, and organizations across Tamil Nadu with a strong reputation for reliability and 24/7 emergency support.
-      </p>
-    </div>
+              {/* Heading */}
+              <motion.h3
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="text-xl font-semibold text-blue-800 mb-4 flex items-center justify-center space-x-2"
+              >
+                <FaEye className="w-6 h-6 text-blue-600" />
+                <span>Number of Views</span>
+              </motion.h3>
 
-    {/* Grid */}
-    <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 lg:gap-8">
-      {/* Reusable Card */}
-      {[
-        {
-          title: "🏭 Industrial Clients",
-          count: 5,
-          clients: [
-            "Indoocool Ranipet",
-            "Nidec India Precision Tools Ltd.",
-            "Amper Electric Scooters",
-            "TCS",
-            "Nifo South India Manufacture",
-          ],
-        },
-        {
-          title: "🏢 Government Sectors",
-          count: 8,
-          clients: [
-            "Collector Office",
-            "RTO Office",
-            "EB Office",
-            "DRO Office",
-            "Forest Office",
-            "NH Office",
-            "Corporation",
-            "Female Jail",
-          ],
-        },
-        {
-          title: "🎓 Educational Institutions",
-          count: 7,
-          clients: [
-            "Don Bosco Groups",
-            "Sami Vikenda Serkadu",
-            "Thiruvalur University",
-            "Holycross Matric School",
-            "St. Mark School",
-            "NTTF",
-            "Oxford",
-          ],
-        },
-        {
-          title: "🏥 Hospitals",
-          count: 4,
-          clients: ["Akshaya", "Saradha", "Annai Pet Shops", "Rajan & Co"],
-        },
-        {
-          title: "📊 Auditor Offices",
-          count: 3,
-          clients: ["R.K. Associates", "Mani & Co", "Raja Varman"],
-        },
-        {
-          title: "⚙️ Small Scale Industries",
-          count: 3,
-          clients: ["C-Tech Engineering", "B&B", "Sai Subratham"],
-        },
-      ].map((card, i) => (
-        <div
-          key={i}
-          className="group rounded-2xl border border-gray-200 bg-white/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 focus-within:ring-2 focus-within:ring-brand-orange/30"
-        >
-          <div className="rounded-t-2xl bg-gradient-to-r from-blue-50 to-sky-100 p-5 border-b border-gray-100">
-            <div className="flex items-center justify-between">
-              <h3 className="text-base md:text-lg font-semibold text-brand-primary">
-                {card.title}
-              </h3>
-              <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
-                {card.count}
-              </span>
+              {/* Animated Counter */}
+              <div className="text-5xl md:text-6xl font-extrabold text-blue-600 tracking-tight drop-shadow-sm mb-6 flex justify-center">
+                {isLoading ? (
+                  <div className="flex space-x-2 animate-pulse">
+                    {[1, 2, 3].map((i) => (
+                      <div
+                        key={i}
+                        className="w-3 h-3 bg-blue-300 rounded-full animate-bounce"
+                        style={{ animationDelay: `${i * 0.2}s` }}
+                      ></div>
+                    ))}
+                  </div>
+                ) : (
+                  <motion.span
+                    key={visitorCount}
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.4 }}
+                  >
+                    {formatNumber(visitorCount)}
+                  </motion.span>
+                )}
+              </div>
+
+              {/* Divider */}
+              <div className="w-16 h-[2px] bg-gradient-to-r from-blue-500 to-sky-400 mx-auto mb-4"></div>
+
+              {/* Thank You Message */}
+              <motion.p
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+                className="text-blue-700/70 text-sm"
+              >
+                Appreciate your visit! Every view inspires this project to grow.
+              </motion.p>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Clients Section */}
+        <section className="relative py-20 bg-surface">
+          {/* Background accents */}
+          <div className="pointer-events-none absolute inset-0">
+            <div className="mx-auto max-w-7xl h-full opacity-70">
+              <div className="absolute -top-8 left-6 h-44 w-44 rounded-full bg-brand-orange/10 blur-3xl" />
+              <div className="absolute bottom-0 right-10 h-52 w-52 rounded-full bg-cyan-400/10 blur-3xl" />
             </div>
           </div>
-          <div className="p-6">
-            <ul className="text-sm text-text-secondary space-y-3 list-decimal list-inside marker:text-brand-orange">
-              {card.clients.map((client, idx) => (
-                 <li
-                  key={idx}
-                  className="flex items-center gap-2 hover:text-brand-primary transition-colors duration-200"
+
+          <div className="relative max-w-7xl mx-auto px-4 lg:px-6">
+            {/* Header */}
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-tight">
+                Our Trusted Clients
+              </h2>
+              <p className="mt-3 text-text-secondary max-w-2xl mx-auto">
+                Serving industries, institutions, and organizations across Tamil Nadu with a strong reputation for reliability and 24/7 emergency support.
+              </p>
+            </div>
+
+            {/* Grid */}
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 lg:gap-8">
+              {[
+                {
+                  title: "🏭 Industrial Areas",
+                  count: 6,
+                  clients: [
+                    "Nidec India Precision Tools Ltd, Ranipet",
+                    "Nifco South India Manufacturing Private Limited, Sriperumbudur",
+                    "Indocool Composites Private Limited, Ranipet",
+                    "Amper Electric Scooters, Ranipet",
+                    "Thirumalai Chemicals Limited (TCL), Ranipet",
+                    "Ultra Technologies, Ranipet",
+                  ],
+                },
+                {
+                  title: "🏢 Government Sectors",
+                  count: 8,
+                  clients: [
+                    "Collector Office – Vellore, Ranipet",
+                    "RTO Office – Vellore, Ranipet",
+                    "EB Office – Vellore, Ranipet",
+                    "DRO Office – Vellore, Ranipet",
+                    "Forest Office – Vellore, Ranipet",
+                    "NH Office – Vellore, Ranipet",
+                    "Corporation – Vellore, Ranipet",
+                    "Female Jail – Vellore",
+                  ],
+                },
+                {
+                  title: "🎓 Educational Institutions",
+                  count: 7,
+                  clients: [
+                    "Don Bosco Matric Hr. Sec. School, Vellore",
+                    "Swami Vivekananda School, Serkadu",
+                    "Thiruvalur University, Vellore",
+                    "Holycross Matric Hr. Sec. School",
+                    "St. Marks Matric Hr. Sec. School",
+                    "Nettur Technical Training Foundation (NTTF), Vellore",
+                    "Oxford School, Vellore",
+                  ],
+                },
+                {
+                  title: "🏥 Hospitals",
+                  count: 4,
+                  clients: [
+                    "Akshayaa Hospital, Vellore",
+                    "Saradha Hospital, Vellore",
+                    "Annai Pet Clinic, Vellore / Chitoor / Kanchipuram",
+                    "Rajan Dental Clinic, Vellore",
+                  ],
+                },
+                {
+                  title: "📊 Auditor's Offices",
+                  count: 4,
+                  clients: [
+                    "R.K. Associates, Vellore",
+                    "Mani & Co, Vellore",
+                    "Raja Varman, Vellore",
+                    "Karunagar CA, Vellore",
+                  ],
+                },
+                {
+                  title: "📸 Photo Studios",
+                  count: 2,
+                  clients: [
+                    "Saran Studio, Vellore",
+                    "Devi Studio, Vellore",
+                  ],
+                },
+                {
+                  title: "⚙️ Small Scale Industries",
+                  count: 3,
+                  clients: [
+                    "C-Tech Engineering & Construction Private Limited, Vellore",
+                    "B&B Developers & Builders Private Limited, Vellore",
+                    "Sai Subrapatham Café, Vellore",
+                  ],
+                },
+              ].map((card, i) => (
+                <div
+                  key={i}
+                  className="group rounded-2xl border border-gray-200 bg-white/90 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 focus-within:ring-2 focus-within:ring-brand-orange/30"
                 >
-                   {idx + 1}.
-                  <span className="font-medium">{client}</span>
-                </li>
+                  <div className="rounded-t-2xl bg-gradient-to-r from-blue-50 to-sky-100 p-5 border-b border-gray-100">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-base md:text-lg font-semibold text-brand-primary">
+                        {card.title}
+                      </h3>
+                      <span className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
+                        {card.count}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <ul className="text-sm text-text-secondary space-y-3 list-decimal list-inside marker:text-brand-orange">
+                      {card.clients.map((client, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-center gap-2 hover:text-brand-primary transition-colors duration-200"
+                        >
+                          {idx + 1}.
+                          <span className="font-medium">{client}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
+
+            {/* Footnote */}
+            <div className="mt-12 text-center">
+              <p className="text-sm md:text-base text-text-secondary">
+                Clients spread across{" "}
+                <span className="font-medium text-text-primary">
+                  Vellore, Thirupathur, Vaniyambadi, Sriperumbudur, Gudiyatham, Ranipet
+                </span>{" "}
+                and surrounding regions.
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        </section>
 
-    {/* Footnote */}
-    <div className="mt-12 text-center">
-      <p className="text-sm md:text-base text-text-secondary">
-        Clients spread across{" "}
-        <span className="font-medium text-text-primary">
-          Vellore, Thirupathur, Vaniyambadi, Sri Perumbudur, Gudiyatham, Ranipet
-        </span>{" "}
-        and more.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-
-  <TestimonialCarousel />
-  <QuickActionCTA />
-</main>
+        <TestimonialCarousel />
+        <QuickActionCTA />
+      </main>
 
       {/* Footer */}
       <footer className="bg-text-primary text-primary-foreground py-12">
@@ -166,7 +316,6 @@ const Homepage = () => {
             {/* Company Info */}
             <div className="space-y-4">
               <div className="">
-                {/* ⬇️ Increase logo box from 2.5 rem (10) to 4 rem (16) */}
                 <img
                   src={Logo}
                   alt=""
@@ -176,7 +325,6 @@ const Homepage = () => {
                     marginLeft: "-5.1rem",
                   }}
                 />
-
                 <div>
                   <h3 className="text-xl font-bold">Y-Tech</h3>
                   <p className="text-sm opacity-80">Computer</p>
@@ -285,8 +433,7 @@ const Homepage = () => {
           {/* Bottom Bar */}
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm opacity-80">
-              © {new Date()?.getFullYear()} Y-Tech Computer. All rights
-              reserved.
+              © {new Date().getFullYear()} Y-Tech Computer. All rights reserved.
             </p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <span className="text-sm opacity-80">Emergency Hotline:</span>

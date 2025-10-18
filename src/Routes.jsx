@@ -10,6 +10,7 @@ import ServicesOverview from './pages/services-overview';
 import AboutYTech from './pages/about-y-tech';
 import Homepage from './pages/homepage';
 import Terms from './pages/Terms';
+import CareersPage from "pages/career";
 
 const Routes = () => {
   return (
@@ -26,6 +27,7 @@ const Routes = () => {
         <Route path="/about-y-tech" element={<AboutYTech />} />
         <Route path="/homepage" element={<Homepage />} />
                 <Route path="/terms" element={<Terms />} />
+        <Route path="/careers" element={<CareersPage />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>

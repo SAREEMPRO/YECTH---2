@@ -15,6 +15,7 @@ const Header = () => {
     // { name: "Service Areas", path: "/service-areas", icon: "MapPin" },
     { name: "Products", path: "/products-showcase", icon: "Package" },
     { name: "Terms", path: "/terms", icon: "FileCheck" },
+    { name: "Careers", path: "/careers", icon: "Briefcase" },
   ];
 
   const secondaryItems = [
@@ -34,27 +35,39 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-border" style={{userSelect: 'none'}}>
+    <header
+      className="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-border"
+      style={{ userSelect: "none" }}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-16 px-4 lg:px-6">
-  <div className="flex items-center space-x-3">
-  <Link to="/homepage" className="flex items-center group">
-    <img
-      src={Logo}
-      alt="Y-Tech Logo"
-      className="
+          <div className="flex items-center space-x-3">
+            <Link to="/homepage" className="flex items-center group">
+              <img
+                src={Logo}
+                alt="Y-Tech Logo"
+                className="
         w-[15rem] h-[6rem] -ml-[4.1rem]   /* default: mobile */
         lg:h-[7rem] lg:-ml-[6.1rem]       /* desktop override */
       "
-    />
+              />
 
-    <div className="hidden sm:block lg:ml-[-1.5rem]">
-      <h1 className="text-xl font-bold text-primary">Y-Tech</h1>
-      <p className="text-xs text-text-secondary -mt-1">Computer</p>
-    </div>
-  </Link>
-</div>
-
+              <div className="hidden sm:block lg:ml-[-1.5rem]">
+                <h1
+                  className="text-xl font-bold text-primary"
+                  style={{ fontSize: "25px" }}
+                >
+                  Y-Tech
+                </h1>
+                <p
+                  className="text-xs text-text-secondary -mt-1 font-bold"
+                  style={{ fontSize: "15px" }}
+                >
+                  Computer
+                </p>
+              </div>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
@@ -72,22 +85,7 @@ const Header = () => {
                 <span>{item?.name}</span>
               </Link>
             ))}
-          </nav>
-
-          {/* Emergency Contact & Mobile Menu */}
-          <div className="flex items-center space-x-3">
-            {/* Emergency Contact Button */}
-            <div className="hidden md:block">
-              <Button
-                variant="default"
-                className="btn-emergency pulse-emergency"
-                iconName="Phone"
-                iconPosition="left"
-                onClick={() => window.open("tel:+919092619444", "_self")}
-              >
-                Emergency: 24/7
-              </Button>
-            </div>
+            
 
             {/* Contact Support - Desktop */}
             <div className="hidden lg:block">
@@ -106,6 +104,11 @@ const Header = () => {
                 </Button>
               </Link>
             </div>
+          </nav>
+
+          {/* Emergency Contact & Mobile Menu */}
+          <div className="flex items-center space-x-3">
+  
 
             {/* Mobile Menu Toggle */}
             <div className="lg:hidden">
