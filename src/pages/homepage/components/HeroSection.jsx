@@ -6,7 +6,7 @@ import Button from '../../../components/ui/Button';
 // import img from '../../../assets/3.png'
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br from-primary/5 via-surface to-accent/5 pb-16 overflow-hidden mt-0 sm:mt-[49px]
+    <section className="relative bg-gradient-to-br from-primary/5 via-surface to-accent/5 pb-16 overflow-hidden mt-[-50px] sm:mt-[49px]
 ">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
