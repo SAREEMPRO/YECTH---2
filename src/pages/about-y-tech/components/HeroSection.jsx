@@ -66,8 +66,9 @@ const HeroSection = () => {
                   <div className="w-3 h-3 bg-success-foreground rounded-full animate-pulse"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-text-primary">Available Now</div>
-                  <div className="text-xs text-text-secondary">24/7 Emergency Support</div>
+                  <div className="text-sm font-semibold text-text-primary">Expert Tech Solutions</div>
+<div className="text-xs text-text-secondary">Fast • Reliable • Affordable</div>
+
                 </div>
               </div>
             </div>
