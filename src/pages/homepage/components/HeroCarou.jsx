@@ -18,31 +18,34 @@ const HeroCarou = () => {
   }, [carouselImages.length]);
 
   return (
-<section
-  className="
-    relative 
-    min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]
-    w-full overflow-hidden
-    mt-[-20px] sm:mt-[49px]
-  "
->
+<div className="px-4 sm:px-8 lg:px-20 py-8">
+  <section
+    className="
+      relative 
+      min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]
+      w-full overflow-hidden
+      mt-[-30px] sm:mt-[60px]
+    "
+  >
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={currentSlide}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.8 }}
+        className="absolute inset-0 w-full h-full bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${carouselImages[currentSlide]})`,
+          backgroundSize: 'contain',
+          mixBlendMode: 'multiply',
+        }}
+      />
+    </AnimatePresence>
+  </section>
+</div>
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentSlide}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
-          className="absolute inset-0 w-full h-full bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(${carouselImages[currentSlide]})`,
-            backgroundSize: 'contain',
-            mixBlendMode: 'multiply',
-          }}
-        />
-      </AnimatePresence>
-    </section>
+
   );
 };
 
