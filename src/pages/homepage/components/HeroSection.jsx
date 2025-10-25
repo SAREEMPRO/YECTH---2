@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import Icon from '../../../components/AppIcon';
 import Image from '../../../components/AppImage';
 import Button from '../../../components/ui/Button';
-
+// import img from '../../../assets/3.png'
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br from-primary/5 via-surface to-accent/5 pt-20 pb-16 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary/5 via-surface to-accent/5 pb-16 overflow-hidden mt-0 sm:mt-[49px]
+">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary rounded-full blur-3xl"></div>
@@ -84,24 +85,28 @@ const HeroSection = () => {
               </Link>
             </div>
 
-            {/* Contact Info */}
-            <div className="flex items-center space-x-6 pt-4 border-t border-border">
-              <div className="flex items-center space-x-2">
-                <Icon name="Phone" size={16} className="text-text-secondary" />
-                <span className="text-sm text-text-secondary">+91 90926 19444</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Icon name="Mail" size={16} className="text-text-secondary" />
-                <span className="text-sm text-text-secondary">support@ytechcomputer.com</span>
-              </div>
-            </div>
+   <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-6 pt-4 border-t border-border">
+  {/* Phone */}
+  <div className="flex items-center space-x-2">
+    <Icon name="Phone" size={16} className="text-text-secondary" />
+    <span className="text-sm text-text-secondary">+91 90926 19444</span>
+  </div>
+
+  {/* Email */}
+  <div className="flex items-center space-x-2">
+    <Icon name="Mail" size={16} className="text-text-secondary" />
+    <span className="text-sm text-text-secondary">support@ytechcomputer.com</span>
+  </div>
+</div>
+
+
           </div>
 
           {/* Image Section */}
           <div className="relative">
             <div className="relative bg-surface rounded-2xl shadow-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop"
+                src="https://lh3.googleusercontent.com/p/AF1QipNpzNZSyvOJCBkQzypKX61whuCOXcx9UhPRQdY3=s707-k-no"
                 alt="Mr. Perumal and Y-Tech team providing computer repair services"
                 className="w-full h-96 object-cover"
               />

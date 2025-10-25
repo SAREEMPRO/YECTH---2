@@ -159,7 +159,7 @@ function ApplicationForm({ jobTitle, onClose }) {
                 id="resume"
                 name="resume"
                 type="url"
-                required
+                
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
                 placeholder="Paste your resume link"
               />
