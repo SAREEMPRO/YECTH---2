@@ -189,23 +189,24 @@ const ContactForm = () => {
     );
   }
 
-  return (
-    <div className="bg-surface rounded-xl shadow-card p-6 lg:p-8 min-w-0 xl:min-w-[1300px]">
+ return (
+  <div className="flex justify-center items-center py-10 px-4 bg-gray-50 min-h-screen  lg:w-[77rem]"style={{backgroundColor:"#f5f5f5",padding:"50px",borderRadius:"10px"}}>
+    <div className="bg-surface rounded-xl shadow-card p-6 lg:p-8 w-full max-w-3xl">
       <div className="flex items-center space-x-3 mb-6">
         <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-          {/* Replaced problematic icon with a simple message icon */}
-          <svg 
-            width="20" 
-            height="20" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
+          {/* Message Icon */}
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
             className="text-primary"
           >
-            <path 
-              d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
+            <path
+              d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              strokeWidth="2"
+              strokeLinecap="round"
               strokeLinejoin="round"
             />
           </svg>
@@ -219,24 +220,23 @@ const ContactForm = () => {
           </p>
         </div>
       </div>
-      
+
       {/* Error Display */}
       {errors.length > 0 && (
         <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4 mb-6">
           <div className="flex items-center space-x-2 mb-2">
-            {/* Replaced problematic icon with a simple alert icon */}
-            <svg 
-              width="16" 
-              height="16" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
               className="text-destructive"
             >
-              <path 
-                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
+              <path
+                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                strokeWidth="2"
+                strokeLinecap="round"
                 strokeLinejoin="round"
               />
               <line x1="12" y1="9" x2="12" y2="13" strokeWidth="2" strokeLinecap="round" />
@@ -254,6 +254,8 @@ const ContactForm = () => {
         </div>
       )}
 
+      {/* The actual form */}
+    
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Inquiry Type */}
         <Select
@@ -431,7 +433,9 @@ const ContactForm = () => {
         </Button>
       </form>
     </div>
-  );
+  </div>
+);
+
 };
 
 export default ContactForm;

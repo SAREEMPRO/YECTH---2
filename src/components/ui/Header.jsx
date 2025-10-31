@@ -47,25 +47,12 @@ const Header = () => {
                 src={Logo}
                 alt="Y-Tech Logo"
                 className="
-        w-[15rem] h-[6rem] -ml-[4.1rem]   /* default: mobile */
-        lg:h-[7rem] lg:-ml-[6.1rem]       /* desktop override */
+        w-[12rem] h-[4rem] -ml-[1.1rem] mt-[-.8rem]  /* default: mobile */
+        lg:h-[8rem] lg:-ml-[1.1rem] lg:w-[16rem]  lg:mt-[.8rem]     /* desktop override */
       "
               />
 
-              <div className="hidden sm:block lg:ml-[-1.5rem]">
-                <h1
-                  className="text-xl font-bold text-primary"
-                  style={{ fontSize: "25px" }}
-                >
-                  Y-Tech
-                </h1>
-                <p
-                  className="text-xs text-text-secondary -mt-1 font-bold"
-                  style={{ fontSize: "15px" }}
-                >
-                  Computer
-                </p>
-              </div>
+
             </Link>
           </div>
 
@@ -75,17 +62,16 @@ const Header = () => {
               <Link
                 key={item?.path}
                 to={item?.path}
-                className={`px-4 py-2 rounded-lg text-sm font-medium smooth-transition flex items-center space-x-2 ${
-                  isActivePath(item?.path)
-                    ? "bg-primary text-primary-foreground rounded-lg"
-                    : "text-text-primary hover:bg-muted hover:text-primary rounded-lg"
-                }`}
+                className={`px-4 py-2 rounded-lg text-sm font-medium smooth-transition flex items-center space-x-2 ${isActivePath(item?.path)
+                  ? "bg-primary text-primary-foreground rounded-lg"
+                  : "text-text-primary hover:bg-muted hover:text-primary rounded-lg"
+                  }`}
               >
                 <Icon name={item?.icon} size={16} />
                 <span>{item?.name}</span>
               </Link>
             ))}
-            
+
 
             {/* Contact Support - Desktop */}
             <div className="hidden lg:block">
@@ -108,7 +94,7 @@ const Header = () => {
 
           {/* Emergency Contact & Mobile Menu */}
           <div className="flex items-center space-x-3">
-  
+
 
             {/* Mobile Menu Toggle */}
             <div className="lg:hidden">
@@ -133,11 +119,10 @@ const Header = () => {
                   key={item?.path}
                   to={item?.path}
                   onClick={closeMobileMenu}
-                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium smooth-transition ${
-                    isActivePath(item?.path)
-                      ? "bg-primary text-primary-foreground"
-                      : "text-text-primary hover:bg-muted hover:text-primary"
-                  }`}
+                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium smooth-transition ${isActivePath(item?.path)
+                    ? "bg-primary text-primary-foreground"
+                    : "text-text-primary hover:bg-muted hover:text-primary"
+                    }`}
                 >
                   <Icon name={item?.icon} size={18} />
                   <span>{item?.name}</span>
@@ -151,11 +136,10 @@ const Header = () => {
                     key={item?.path}
                     to={item?.path}
                     onClick={closeMobileMenu}
-                    className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium smooth-transition ${
-                      isActivePath(item?.path)
-                        ? "bg-primary text-primary-foreground"
-                        : "text-text-primary hover:bg-muted hover:text-primary"
-                    }`}
+                    className={`flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium smooth-transition ${isActivePath(item?.path)
+                      ? "bg-primary text-primary-foreground"
+                      : "text-text-primary hover:bg-muted hover:text-primary"
+                      }`}
                   >
                     <Icon name={item?.icon} size={18} />
                     <span>{item?.name}</span>

@@ -6,7 +6,7 @@ import ServicesGrid from "./components/ServicesGrid";
 import TrustIndicators from "./components/TrustIndicators";
 import TestimonialCarousel from "./components/TestimonialCarousel";
 import QuickActionCTA from "./components/QuickActionCTA";
-import Logo from "../../../Logo.png";
+import Logo from "../../assets/Logo.png";
 import { Helmet } from "react-helmet";
 import { FaEye } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -322,11 +322,13 @@ const Homepage = () => {
                   src={Logo}
                   alt="Y-Tech Computer"
                   className="w-24 sm:w-32 md:w-36 h-auto"
+                    style={{
+                    width: "14rem",
+                    height: "5rem",
+                    marginLeft: "0.1rem",
+                  }}
                 />
-                <div className="ml-2 sm:ml-4">
-                  <h3 className="text-lg sm:text-xl font-bold">Y-Tech</h3>
-                  <p className="text-xs sm:text-sm opacity-80">Computer</p>
-                </div>
+              
               </div>
               <p className="text-xs sm:text-sm opacity-90 leading-relaxed">
                 Your trusted technology partner since 2005, providing

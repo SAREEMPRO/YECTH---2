@@ -20,7 +20,7 @@ const CompanyTimeline = () => {
     {
       year: "2012",
       title: "Authorized Service Center",
-      description: "Became authorized service center for HP, Dell, and Lenovo. Introduced comprehensive AMC services for small and medium businesses.",
+      description: "Became Authorized Service Partner - Dell,HP & Acer etc. Introduced comprehensive AMC services for small and medium businesses.",
       icon: "Award",
       color: "bg-success"
     },
@@ -34,7 +34,7 @@ const CompanyTimeline = () => {
     {
       year: "2020",
       title: "Digital Transformation",
-      description: "Adapted to remote work needs, launched cloud solutions, and established 24/7 emergency support during the pandemic.",
+      description: "Adapted to remote work needs, launched cloud solutions.",
       icon: "Cloud",
       color: "bg-accent"
     },

@@ -2,12 +2,11 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import ContactForm from './components/ContactForm';
-// import ContactInfo from './components/ContactInfo';
 import LocationMap from './components/LocationMap';
 import SupportCenter from './components/SupportCenter';
 import CallbackScheduler from './components/CallbackScheduler';
 import Icon from '../../components/AppIcon';
-import Logo from "../../../Logo.png"
+import Logo from "../../assets/Logo.png";
 
 const ContactSupport = () => {
   const scrollToSection = (sectionId) => {
@@ -25,19 +24,19 @@ const ContactSupport = () => {
         <meta name="keywords" content="Y-Tech contact, IT support Tamil Nadu, computer repair Vellore, emergency IT support, AMC services, technical support" />
       </Helmet>
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-20 pb-12 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="text-center mb-12">
-     <div className="flex items-center justify-center space-x-3 mb-4">
-  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-    <Icon name="Headphones" size={24} className="text-primary-foreground" />
-  </div>
-  <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-text-primary max-[250px]:text-xl">
-    Contact & Support
-  </h1>
-</div>
+            <div className="flex items-center justify-center space-x-3 mb-4">
+              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                <Icon name="Headphones" size={24} className="text-primary-foreground" />
+              </div>
+              <h1 className="text-xl sm:text-3xl lg:text-4xl font-bold text-text-primary max-[250px]:text-xl">
+                Contact & Support
+              </h1>
+            </div>
 
             <p className="text-lg text-text-secondary max-w-3xl mx-auto mb-8 ">
               Get in touch with Y-Tech Computer. We're here to help with all your IT needs across Tamil Nadu with 24/7 emergency support and comprehensive service options.
@@ -45,7 +44,7 @@ const ContactSupport = () => {
 
             {/* Quick Action Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-              <div 
+              <div
                 className="bg-brand-orange/10 border border-brand-orange/20 rounded-xl p-4 cursor-pointer hover:shadow-lg smooth-transition"
                 onClick={() => window.open('tel:+919092619444', '_self')}
               >
@@ -57,7 +56,7 @@ const ContactSupport = () => {
                 <p className="text-sm font-bold text-brand-orange">+91 90926 19444 , +91 98942 91164</p>
               </div>
 
-              <div 
+              <div
                 className="bg-primary/10 border border-primary/20 rounded-xl p-4 cursor-pointer hover:shadow-lg smooth-transition"
                 onClick={() => scrollToSection('contact-form')}
               >
@@ -69,7 +68,7 @@ const ContactSupport = () => {
                 <p className="text-sm font-medium text-primary">Fill Contact Form</p>
               </div>
 
-              <div 
+              <div
                 className="bg-success/10 border border-success/20 rounded-xl p-4 cursor-pointer hover:shadow-lg smooth-transition"
                 onClick={() => scrollToSection('callback-scheduler')}
               >
@@ -85,7 +84,7 @@ const ContactSupport = () => {
         </div>
       </section>
 
-         {/* Location & Map Section */}
+      {/* Location & Map Section */}
       <section className="py-12 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="text-center mb-8">
@@ -96,7 +95,7 @@ const ContactSupport = () => {
               Find us across Tamil Nadu with convenient locations in major cities. Get directions and contact information for each service center.
             </p>
           </div>
-          
+
           {/* Branch Information Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {/* Main Branch */}
@@ -106,7 +105,7 @@ const ContactSupport = () => {
                   <Icon name="Building" size={20} className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-text-primary">Y-Tech Computer</h3>
+                  <h3 className="font-bold text-lg text-text-primary">Y-TECH COMPUTER</h3>
                   <p className="text-sm text-text-secondary">Head Office</p>
                 </div>
               </div>
@@ -199,7 +198,7 @@ const ContactSupport = () => {
         </div>
       </section>
 
-   
+
       {/* Support Center Section */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
@@ -319,14 +318,11 @@ const ContactSupport = () => {
                   alt=""
                   style={{
                     width: "14rem",
-                    height: "7rem",
-                    marginLeft: "-5.1rem",
+                    height: "5rem",
+                    marginLeft: "0.1rem",
                   }}
                 />
-                <div>
-                  <h3 className="text-xl font-bold">Y-Tech</h3>
-                  <p className="text-sm opacity-80">Computer</p>
-                </div>
+              
               </div>
               <p className="text-sm opacity-90 leading-relaxed">
                 Your trusted technology partner since 2005, providing
@@ -458,7 +454,7 @@ const ContactSupport = () => {
                 href="tel:+919092619444"
                 className="bg-brand-orange text-brand-orange-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:bg-brand-orange-dark transition-colors"
               >
-               +91 98942 91164
+                +91 98942 91164
               </a>
             </div>
           </div>

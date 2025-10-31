@@ -143,16 +143,12 @@ export default function Terms() {
                    src={Logo}
                    alt=""
                    style={{
-                     width: "14rem",
-                     height: "7rem",
-                     marginLeft: "-5.1rem",
-                   }}
+                    width: "14rem",
+                    height: "5rem",
+                    marginLeft: "0.1rem",
+                  }}
                  />
  
-                 <div>
-                   <h3 className="text-xl font-bold">Y-Tech</h3>
-                   <p className="text-sm opacity-80">Computer</p>
-                 </div>
                </div>
                <p className="text-sm opacity-90 leading-relaxed">
                  Your trusted technology partner since 2005, providing

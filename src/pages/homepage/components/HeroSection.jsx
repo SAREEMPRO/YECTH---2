@@ -106,18 +106,18 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative bg-surface rounded-2xl shadow-2xl overflow-hidden">
               <Image
-                src="https://lh3.googleusercontent.com/p/AF1QipNpzNZSyvOJCBkQzypKX61whuCOXcx9UhPRQdY3=s707-k-no"
+                src="https://img.freepik.com/premium-photo/row-laptops-with-word-i-love-screen_1015182-46794.jpg?semt=ais_hybrid&w=740&q=80"
                 alt="Mr. Perumal and Y-Tech team providing computer repair services"
                 className="w-full h-96 object-cover"
               />
               
               {/* Overlay Card */}
-              <div className="absolute bottom-4 left-4 right-4 bg-surface/95 backdrop-blur-sm rounded-xl p-4 border border-border">
+              <div className="absolute bottom-4 left-4 right-4 bg-surface/95 backdrop-blur-sm rounded-xl p-4 border border-border"style={{backgroundColor:"white"}}>
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                     <Icon name="User" size={24} className="text-primary-foreground" />
                   </div>
-                  <div>
+                  <div >
                     <h3 className="font-semibold text-text-primary">Mr. Perumal</h3>
                     <p className="text-sm text-text-secondary">Proprietor D.E.E., BBA</p>
                     <div className="flex items-center space-x-1 mt-1">
