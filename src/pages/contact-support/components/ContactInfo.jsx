@@ -18,7 +18,7 @@ const ContactInfo = () => {
     {
       type: 'Main Office',
       icon: 'MapPin',
-      title: 'Y-Tech Computer Solutions',
+      title: 'Y Tech Computer Solutions',
       value: '123 Gandhi Road, Vellore - 632001',
       description: 'Tamil Nadu, India',
       action: () => window.open('https://maps.google.com/?q=12.9165,79.1325', '_blank'),

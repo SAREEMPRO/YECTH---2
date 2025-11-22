@@ -13,7 +13,7 @@ const PersonalCommitment = () => {
     {
       icon: "Shield",
       title: "Quality Assurance Promise",
-      description: "Every service performed by Y-Tech comes with my personal guarantee of quality and customer satisfaction."
+      description: "Every service performed by Y Tech comes with my personal guarantee of quality and customer satisfaction."
     },
     {
       icon: "Heart",
@@ -51,7 +51,7 @@ const PersonalCommitment = () => {
     },
     {
       type: "Office",
-      value: "Y-Tech Computer, Vellore",
+      value: "Y Tech Computer, Vellore",
       icon: "MapPin",
       description: "Visit Our Workshop",
       action: () => {}
@@ -70,14 +70,14 @@ const PersonalCommitment = () => {
               </h2>
               <p className="text-lg text-text-secondary leading-relaxed">
                 "After 20 years in this business, I've learned that technology is only as good as the 
-                trust and relationships behind it. Every client who chooses Y-Tech receives my personal 
+                trust and relationships behind it. Every client who chooses Y Tech receives my personal 
                 commitment to excellence."
               </p>
             </div>
 
             <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">
               <blockquote className="text-text-primary italic text-lg leading-relaxed">
-                "When you call Y-Tech, you're not just getting a service provider – you're getting a 
+                "When you call Y Tech, you're not just getting a service provider – you're getting a 
                 technology partner who genuinely cares about your success. I stand behind every service 
                 we provide with my personal guarantee."
               </blockquote>
@@ -87,7 +87,7 @@ const PersonalCommitment = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-text-primary">Mr. Perumal</div>
-                  <div className="text-sm text-text-secondary">Founder &amp; CTO, Y-Tech Computer</div>
+                  <div className="text-sm text-text-secondary">Founder &amp; CTO, Y Tech Computer</div>
                 </div>
               </div>
             </div>

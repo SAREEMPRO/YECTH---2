@@ -107,7 +107,7 @@ const HeroSection = () => {
             <div className="relative bg-surface rounded-2xl shadow-2xl overflow-hidden">
               <Image
                 src="https://img.freepik.com/premium-photo/row-laptops-with-word-i-love-screen_1015182-46794.jpg?semt=ais_hybrid&w=740&q=80"
-                alt="Mr. Perumal and Y-Tech team providing computer repair services"
+                alt="Mr. Perumal and Y Tech team providing computer repair services"
                 className="w-full h-96 object-cover"
               />
               

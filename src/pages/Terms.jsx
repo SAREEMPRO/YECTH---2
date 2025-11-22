@@ -2,14 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../components/ui/Header';
 import Icon from '../components/AppIcon';
-import Logo from "../../Logo.png"
+import Logo from "../assets/FooterLogo.png";
 
 export default function Terms() {
   return (
     <>
       <Helmet>
-        <title>Terms & Conditions - Y-Tech Computer & Services | Vellore</title>
-        <meta name="description" content="Read Y-Tech Computer & Services maintenance terms and conditions for AMC services, warranty coverage, and service agreements in Vellore." />
+        <title>Terms & Conditions - Y Tech Computer & Services | Vellore</title>
+        <meta name="description" content="Read Y Tech Computer & Services maintenance terms and conditions for AMC services, warranty coverage, and service agreements in Vellore." />
       </Helmet>
       
       <div className="min-h-screen bg-background">
@@ -42,7 +42,7 @@ export default function Terms() {
 
                   <ol className="space-y-8 list-decimal list-outside pl-6">
                     <li className="pl-4">
-                      <strong>Equipment Movement:</strong> Y-Tech computers and all peripherals should not be moved from 
+                      <strong>Equipment Movement:</strong> Y Tech computers and all peripherals should not be moved from 
                       their installed position without the knowledge and guidance of our concerned technician.
                     </li>
 
@@ -77,7 +77,7 @@ export default function Terms() {
 
                     <li className="pl-4">
                       <strong>System Condition at Contract Termination:</strong> Customers will hand over the system in 
-                      perfect working condition to Y-Tech Computers, who in turn will hand over the system in perfect 
+                      perfect working condition to Y Tech Computers, who in turn will hand over the system in perfect 
                       working condition to customers at the time of termination of contract. AMC will cover only electronic 
                       parts of Computer Device, not any plastic or metal parts.
                     </li>
@@ -166,7 +166,7 @@ export default function Terms() {
                      href="/about-y-tech"
                      className="opacity-80 hover:opacity-100 transition-opacity"
                    >
-                     About Y-Tech
+                     About Y Tech
                    </a>
                  </li>
                  <li>
@@ -253,7 +253,7 @@ export default function Terms() {
            {/* Bottom Bar */}
            <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
              <p className="text-sm opacity-80">
-               © {new Date()?.getFullYear()} Y-Tech Computer. All rights
+               © {new Date()?.getFullYear()} Y Tech Computer. All rights
                reserved.
              </p>
              <div className="flex items-center space-x-4 mt-4 md:mt-0">

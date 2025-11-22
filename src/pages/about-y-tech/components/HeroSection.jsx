@@ -17,7 +17,7 @@ const HeroSection = () => {
 
               <p className="text-lg text-text-secondary leading-relaxed">
                 From a small computer repair shop to Tamil Nadu's trusted IT solutions provider, 
-                Y-Tech has been transforming businesses through reliable technology support for nearly two decades.
+                Y Tech has been transforming businesses through reliable technology support for nearly two decades.
               </p>
             </div>
             

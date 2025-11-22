@@ -5,7 +5,7 @@ const CompanyTimeline = () => {
   const timelineEvents = [
     {
       year: "2005",
-      title: "Y-Tech Computer Established",
+      title: "Y Tech Computer Established",
       description: "Mr. Perumal started with a small computer repair shop in Vellore, focusing on hardware repairs and basic IT support for local businesses.",
       icon: "Building",
       color: "bg-primary"
@@ -13,7 +13,7 @@ const CompanyTimeline = () => {
     {
       year: "2008",
       title: "Service Area Expansion",
-      description: "Extended services to Thirupathur and Vaniyambadi, establishing Y-Tech as a regional IT support provider with mobile service capabilities.",
+      description: "Extended services to Thirupathur and Vaniyambadi, establishing Y Tech as a regional IT support provider with mobile service capabilities.",
       icon: "MapPin",
       color: "bg-secondary"
     },
@@ -41,7 +41,7 @@ const CompanyTimeline = () => {
     {
       year: "2024",
       title: "Complete Digital Hub",
-      description: "Today, Y-Tech maintaining response time and 200+ satisfied clients.",
+      description: "Today, Y Tech maintaining response time and 200+ satisfied clients.",
       icon: "Zap",
       color: "bg-primary"
     }

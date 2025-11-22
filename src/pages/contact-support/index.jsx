@@ -6,7 +6,7 @@ import LocationMap from './components/LocationMap';
 import SupportCenter from './components/SupportCenter';
 import CallbackScheduler from './components/CallbackScheduler';
 import Icon from '../../components/AppIcon';
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/FooterLogo.png";
 
 const ContactSupport = () => {
   const scrollToSection = (sectionId) => {
@@ -19,9 +19,9 @@ const ContactSupport = () => {
   return (
     <div className="min-h-screen bg-background mt-12">
       <Helmet>
-        <title>Contact & Support - Y-Tech Computer | 24/7 IT Support in Tamil Nadu</title>
-        <meta name="description" content="Contact Y-Tech Computer for 24/7 IT support across Tamil Nadu. Emergency support, service requests, AMC inquiries. Call +91 90926 19444 for immediate assistance." />
-        <meta name="keywords" content="Y-Tech contact, IT support Tamil Nadu, computer repair Vellore, emergency IT support, AMC services, technical support" />
+        <title>Contact & Support - Y Tech Computer | 24/7 IT Support in Tamil Nadu</title>
+        <meta name="description" content="Contact Y Tech Computer for 24/7 IT support across Tamil Nadu. Emergency support, service requests, AMC inquiries. Call +91 90926 19444 for immediate assistance." />
+        <meta name="keywords" content="Y Tech contact, IT support Tamil Nadu, computer repair Vellore, emergency IT support, AMC services, technical support" />
       </Helmet>
       <Header />
 
@@ -39,7 +39,7 @@ const ContactSupport = () => {
             </div>
 
             <p className="text-lg text-text-secondary max-w-3xl mx-auto mb-8 ">
-              Get in touch with Y-Tech Computer. We're here to help with all your IT needs across Tamil Nadu with 24/7 emergency support and comprehensive service options.
+              Get in touch with Y Tech Computer. We're here to help with all your IT needs across Tamil Nadu with 24/7 emergency support and comprehensive service options.
             </p>
 
             {/* Quick Action Cards */}
@@ -105,7 +105,7 @@ const ContactSupport = () => {
                   <Icon name="Building" size={20} className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-text-primary">Y-TECH COMPUTER</h3>
+                  <h3 className="font-bold text-lg text-text-primary">Y Tech COMPUTER</h3>
                   <p className="text-sm text-text-secondary">Head Office</p>
                 </div>
               </div>
@@ -340,7 +340,7 @@ const ContactSupport = () => {
                     href="/about-y-tech"
                     className="opacity-80 hover:opacity-100 transition-opacity"
                   >
-                    About Y-Tech
+                    About Y Tech
                   </a>
                 </li>
                 <li>
@@ -446,7 +446,7 @@ const ContactSupport = () => {
           {/* Bottom Bar */}
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm opacity-80">
-              © {new Date()?.getFullYear()} Y-Tech Computer. All rights reserved.
+              © {new Date()?.getFullYear()} Y Tech Computer. All rights reserved.
             </p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <span className="text-sm opacity-80">Emergency Hotline:</span>

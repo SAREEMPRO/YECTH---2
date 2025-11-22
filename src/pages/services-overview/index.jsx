@@ -9,7 +9,7 @@ import ServiceFilter from './components/ServiceFilter';
 import ServiceGuarantees from './components/ServiceGuarantees';
 import IndustrySpecificSolutions from './components/IndustrySpecificSolutions';
 import EmergencySupport from './components/EmergencySupport';
-import Logo from "../../../Logo.png"
+import Logo from "../../assets/FooterLogo.png";
 
 const ServicesOverview = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -179,7 +179,7 @@ const ServicesOverview = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Services Overview - Y-Tech Computer | Complete IT Solutions</title>
+        <title>Services Overview - Y Tech Computer | Complete IT Solutions</title>
         <meta name="description" content="Comprehensive IT services including computer repair, networking solutions, AMC contracts, and 24/7 emergency support. Serving Tamil Nadu since 2005." />
         <meta name="keywords" content="IT services, computer repair, networking, AMC, emergency support, Vellore, Tamil Nadu" />
       </Helmet>
@@ -359,7 +359,7 @@ const ServicesOverview = () => {
                     href="/about-y-tech"
                     className="opacity-80 hover:opacity-100 transition-opacity"
                   >
-                    About Y-Tech
+                    About Y Tech
                   </a>
                 </li>
                 <li>
@@ -446,7 +446,7 @@ const ServicesOverview = () => {
           {/* Bottom Bar */}
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm opacity-80">
-              © {new Date()?.getFullYear()} Y-Tech Computer. All rights
+              © {new Date()?.getFullYear()} Y Tech Computer. All rights
               reserved.
             </p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">

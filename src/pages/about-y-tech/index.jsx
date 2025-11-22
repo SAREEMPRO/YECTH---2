@@ -9,7 +9,7 @@ import ServiceAreaMap from './components/ServiceAreaMap';
 import CertificationsPartners from './components/CertificationsPartners';
 import CommunityInvolvement from './components/CommunityInvolvement';
 import PersonalCommitment from './components/PersonalCommitment';
-import Logo from "../../../Logo.png"
+import Logo from "../../assets/FooterLogo.png";
 
 const AboutYTech = () => {
   useEffect(() => {
@@ -19,14 +19,14 @@ const AboutYTech = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>About Y-Tech - Your Technology Partner Since 2005 | Mr. Perumal's Story</title>
+        <title>About Y Tech - Your Technology Partner Since 2005 | Mr. Perumal's Story</title>
         <meta 
           name="description" 
-          content="Meet Mr. Perumal and learn about Y-Tech's 20-year journey from a small computer repair shop to Tamil Nadu's trusted IT solutions provider. Serving 2000+ businesses across 6 districts with response guarantee." 
+          content="Meet Mr. Perumal and learn about Y Tech's 20-year journey from a small computer repair shop to Tamil Nadu's trusted IT solutions provider. Serving 2000+ businesses across 6 districts with response guarantee." 
         />
-        <meta name="keywords" content="Y-Tech Computer, Mr. Perumal, IT services Tamil Nadu, computer repair Vellore, technology partner, authorized service center" />
-        <meta property="og:title" content="About Y-Tech - Your Technology Partner Since 2005" />
-        <meta property="og:description" content="Discover Y-Tech's authentic story and Mr. Perumal's commitment to making technology simple and accessible for businesses across Tamil Nadu." />
+        <meta name="keywords" content="Y Tech Computer, Mr. Perumal, IT services Tamil Nadu, computer repair Vellore, technology partner, authorized service center" />
+        <meta property="og:title" content="About Y Tech - Your Technology Partner Since 2005" />
+        <meta property="og:description" content="Discover Y Tech's authentic story and Mr. Perumal's commitment to making technology simple and accessible for businesses across Tamil Nadu." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/about-y-tech" />
       </Helmet>
@@ -222,7 +222,7 @@ const AboutYTech = () => {
                        href="/about-y-tech"
                        className="opacity-80 hover:opacity-100 transition-opacity"
                      >
-                       About Y-Tech
+                       About Y Tech
                      </a>
                    </li>
                    <li>
@@ -309,7 +309,7 @@ const AboutYTech = () => {
              {/* Bottom Bar */}
              <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                <p className="text-sm opacity-80">
-                 © {new Date()?.getFullYear()} Y-Tech Computer. All rights
+                 © {new Date()?.getFullYear()} Y Tech Computer. All rights
                  reserved.
                </p>
                <div className="flex items-center space-x-4 mt-4 md:mt-0">

@@ -21,7 +21,7 @@ const FeaturedProducts = ({ featuredProducts, onViewProduct, onQuickQuote }) => 
         </div>
         <div className="hidden md:flex items-center space-x-2">
           <Icon name="Star" size={20} className="text-brand-orange" />
-          <span className="text-sm font-medium text-text-secondary">Handpicked by Y-Tech experts</span>
+          <span className="text-sm font-medium text-text-secondary">Handpicked by Y Tech experts</span>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

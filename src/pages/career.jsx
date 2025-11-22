@@ -12,7 +12,7 @@ import {
   FaUserTie,
   FaTimes
 } from "react-icons/fa";
-import Logo from "../../Logo.png";
+import Logo from "../assets/FooterLogo.png";
 import { useForm, ValidationError } from '@formspree/react';
 
 // Application Form Component
@@ -324,14 +324,14 @@ const CareersPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Careers - Y-Tech Computer</title>
+        <title>Careers - Y Tech Computer</title>
         <meta
           name="description"
-          content="Join Y-Tech Computer team. Career opportunities for Hardware/Software Engineers, Networking Technicians, and Accountants in Vellore."
+          content="Join Y Tech Computer team. Career opportunities for Hardware/Software Engineers, Networking Technicians, and Accountants in Vellore."
         />
         <meta
           name="keywords"
-          content="careers vellore, it jobs, hardware engineer, networking technician, computer jobs, y-tech careers"
+          content="careers vellore, it jobs, hardware engineer, networking technician, computer jobs, Y Tech careers"
         />
       </Helmet>
       <Header />
@@ -342,7 +342,7 @@ const CareersPage = () => {
           <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 text-center">
             <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mb-3 xs:mb-4">Join Our Team</h1>
             <p className="text-lg xs:text-xl sm:text-2xl mb-6 xs:mb-8 opacity-90">
-              Build Your Career in IT with <span className="font-bold">Y-Tech Computer</span>
+              Build Your Career in IT with <span className="font-bold">Y Tech Computer</span>
             </p>
             <p className="text-sm xs:text-base sm:text-lg max-w-3xl mx-auto opacity-80 px-2">
               We're looking for passionate individuals to join our growing team. 
@@ -359,7 +359,7 @@ const CareersPage = () => {
                 Current Job Openings
               </h2>
               <p className="text-sm xs:text-base sm:text-lg text-text-secondary max-w-2xl mx-auto px-2">
-                Explore exciting career opportunities with Y-Tech Computer. 
+                Explore exciting career opportunities with Y Tech Computer. 
                 Both fresh graduates and experienced professionals are welcome to apply.
               </p>
             </div>
@@ -426,7 +426,7 @@ const CareersPage = () => {
                 Why Work With Us?
               </h2>
               <p className="text-sm xs:text-base sm:text-lg text-text-secondary max-w-2xl mx-auto px-2">
-                At Y-Tech Computer, we value our employees and provide a supportive 
+                At Y Tech Computer, we value our employees and provide a supportive 
                 environment for professional growth.
               </p>
             </div>
@@ -666,7 +666,7 @@ const CareersPage = () => {
                        href="/about-y-tech"
                        className="opacity-80 hover:opacity-100 transition-opacity"
                      >
-                       About Y-Tech
+                       About Y Tech
                      </a>
                    </li>
                    <li>
@@ -753,7 +753,7 @@ const CareersPage = () => {
              {/* Bottom Bar */}
              <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                <p className="text-sm opacity-80">
-                 © {new Date().getFullYear()} Y-Tech Computer. All rights reserved.
+                 © {new Date().getFullYear()} Y Tech Computer. All rights reserved.
                </p>
                <div className="flex items-center space-x-4 mt-4 md:mt-0">
                  <span className="text-sm opacity-80">Emergency Hotline:</span>

@@ -39,7 +39,7 @@ const InteractiveMap = ({ areas, selectedArea, onAreaSelect }) => {
           </div>
           <div className="flex items-center space-x-2">
             <div className="w-3 h-3 bg-primary rounded-full"></div>
-            <span>Y-Tech Office</span>
+            <span>Y Tech Office</span>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ const InteractiveMap = ({ areas, selectedArea, onAreaSelect }) => {
           width="100%"
           height="100%"
           loading="lazy"
-          title="Y-Tech Service Areas Map"
+          title="Y Tech Service Areas Map"
           referrerPolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.36226824936!2d79.13629497585694!3d12.948655215379336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47bb08620f6f%3A0x35e1d9464c24c611!2z8J2QmCDwnZCT8J2QhPCdkILwnZCHIPCdkILwnZCO8J2QjPCdkI_wnZCU8J2Qk_CdkITwnZCRICYg8J2QkvCdkITwnZCR8J2QlfCdkIjwnZCC8J2QhPCdkJI!5e0!3m2!1sen!2sin!4v1759139296248!5m2!1sen!2sin"
           className="border-0"
@@ -92,7 +92,7 @@ const InteractiveMap = ({ areas, selectedArea, onAreaSelect }) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Icon name="MapPin" size={16} className="text-primary" />
-            <span className="text-sm font-medium text-text-primary">Y-Tech Computer</span>
+            <span className="text-sm font-medium text-text-primary">Y Tech Computer</span>
           </div>
           <div className="text-sm text-text-secondary">
             Vellore, Tamil Nadu - 632001

@@ -6,7 +6,7 @@ import ServicesGrid from "./components/ServicesGrid";
 import TrustIndicators from "./components/TrustIndicators";
 import TestimonialCarousel from "./components/TestimonialCarousel";
 import QuickActionCTA from "./components/QuickActionCTA";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/FooterLogo.png";
 import { Helmet } from "react-helmet";
 import { FaEye } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -81,10 +81,10 @@ const Homepage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Y-Tech Computer</title>
+        <title>Y Tech Computer</title>
         <meta
           name="description"
-          content="Explore Y-Tech's complete range of IT products - Computers, Laptops, Printers, CCTV, Biometric systems, Network cables and all IT accessories in Vellore."
+          content="Explore Y Tech's complete range of IT products - Computers, Laptops, Printers, CCTV, Biometric systems, Network cables and all IT accessories in Vellore."
         />
         <meta
           name="keywords"
@@ -320,10 +320,10 @@ const Homepage = () => {
               <div className="flex items-center">
                 <img
                   src={Logo}
-                  alt="Y-Tech Computer"
+                  alt="Y Tech Computer"
                   className="w-24 sm:w-32 md:w-36 h-auto"
                     style={{
-                    width: "14rem",
+                      width: "14rem",
                     height: "5rem",
                     marginLeft: "0.1rem",
                   }}
@@ -346,7 +346,7 @@ const Homepage = () => {
                     href="/about-y-tech"
                     className="opacity-80 hover:opacity-100 transition-opacity"
                   >
-                    About Y-Tech
+                    About Y Tech
                   </a>
                 </li>
                 <li>
@@ -433,7 +433,7 @@ const Homepage = () => {
           {/* Bottom Bar */}
           <div className="border-t border-primary-foreground/20 mt-6 sm:mt-8 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center">
             <p className="text-xs sm:text-sm opacity-80 text-center sm:text-left mb-4 sm:mb-0">
-              © {new Date().getFullYear()} Y-Tech Computer. All rights reserved.
+              © {new Date().getFullYear()} Y Tech Computer. All rights reserved.
             </p>
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
               <span className="text-xs sm:text-sm opacity-80">Emergency Hotline:</span>

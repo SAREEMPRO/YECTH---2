@@ -8,7 +8,7 @@ import InteractiveMap from './components/InteractiveMap';
 import AreaDetailsModal from './components/AreaDetailsModal';
 import ServiceRequestModal from './components/ServiceRequestModal';
 import CoverageStats from './components/CoverageStats';
-import Logo from "../../../Logo.png"
+import Logo from "../../assets/FooterLogo.png";
 
 const ServiceAreas = () => {
   const [selectedArea, setSelectedArea] = useState(null);
@@ -39,7 +39,7 @@ const ServiceAreas = () => {
         {
           name: 'Rajesh Kumar',
           company: 'Kumar Textiles',
-          content: 'Y-Tech has been our IT partner for 3 years. Their quick response and reliable service keeps our business running smoothly.'
+          content: 'Y Tech has been our IT partner for 3 years. Their quick response and reliable service keeps our business running smoothly.'
         },
         {
           name: 'Dr. Priya Sharma',
@@ -203,8 +203,8 @@ const ServiceAreas = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Service Areas - Y-Tech Computer | IT Support Across Tamil Nadu</title>
-        <meta name="description" content="Y-Tech provides comprehensive IT services across Vellore, Thirupathur, Vaniyambadi, Sri Perambudur, Gudiyatham, and Ranipet. Same-day service available in select areas." />
+        <title>Service Areas - Y Tech Computer | IT Support Across Tamil Nadu</title>
+        <meta name="description" content="Y Tech provides comprehensive IT services across Vellore, Thirupathur, Vaniyambadi, Sri Perambudur, Gudiyatham, and Ranipet. Same-day service available in select areas." />
         <meta name="keywords" content="IT services Tamil Nadu, computer repair Vellore, network setup Thirupathur, data recovery Vaniyambadi" />
       </Helmet>
       <Header />
@@ -433,7 +433,7 @@ const ServiceAreas = () => {
                        href="/about-y-tech"
                        className="opacity-80 hover:opacity-100 transition-opacity"
                      >
-                       About Y-Tech
+                       About Y Tech
                      </a>
                    </li>
                    <li>
@@ -520,7 +520,7 @@ const ServiceAreas = () => {
              {/* Bottom Bar */}
              <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                <p className="text-sm opacity-80">
-                 © {new Date()?.getFullYear()} Y-Tech Computer. All rights
+                 © {new Date()?.getFullYear()} Y Tech Computer. All rights
                  reserved.
                </p>
                <div className="flex items-center space-x-4 mt-4 md:mt-0">

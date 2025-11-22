@@ -230,7 +230,7 @@ const businessInfo = {
           </h2>
           
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            Discover how Y-Tech has helped businesses across Tamil Nadu overcome IT challenges and achieve their technology goals.
+            Discover how Y Tech has helped businesses across Tamil Nadu overcome IT challenges and achieve their technology goals.
           </p>
         </div>
 

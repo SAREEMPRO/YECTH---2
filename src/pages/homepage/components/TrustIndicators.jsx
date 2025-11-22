@@ -50,7 +50,7 @@ const TrustIndicators = () => {
           </div>
           
           <h2 className="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
-            Why Businesses Choose Y-Tech
+            Why Businesses Choose Y Tech
           </h2>
           
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">

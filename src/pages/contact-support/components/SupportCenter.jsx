@@ -92,7 +92,7 @@ const SupportCenter = () => {
 
   const downloads = [
     {
-      name: 'Y-Tech Remote Support Tool',
+      name: 'Y Tech Remote Support Tool',
       description: 'Allow our technicians to remotely assist with your computer',
       version: 'v2.1.0',
       size: '15.2 MB',

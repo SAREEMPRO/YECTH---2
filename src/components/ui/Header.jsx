@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Icon from "../AppIcon";
-import Logo from "../../../Logo.png";
+import Logo from "../../assets/FooterLogo.png";
 import Button from "./Button";
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
 
   const navigationItems = [
     { name: "Home", path: "/homepage", icon: "Home" },
-    { name: "About Y-Tech", path: "/about-y-tech", icon: "Users" },
+    { name: "About Y Tech", path: "/about-y-tech", icon: "Users" },
     { name: "Services", path: "/services-overview", icon: "Settings" },
     // { name: "Service Areas", path: "/service-areas", icon: "MapPin" },
     { name: "Products", path: "/products-showcase", icon: "Package" },
@@ -47,8 +47,8 @@ const Header = () => {
                 src={Logo}
                 alt="Y-Tech Logo"
                 className="
-        w-[12rem] h-[4rem] -ml-[1.1rem] mt-[-.8rem]  /* default: mobile */
-        lg:h-[8rem] lg:-ml-[1.1rem] lg:w-[16rem]  lg:mt-[.8rem]     /* desktop override */
+        w-[13rem] h-[4.5rem] -ml-[.2rem] mt-[.2rem]  /* default: mobile */
+        lg:h-[5rem] lg:-ml-[1.1rem] lg:w-[14rem]  lg:mt-[.8rem]     /* desktop override */
       "
               />
 

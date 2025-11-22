@@ -12,7 +12,7 @@ import FeaturedProducts from './components/FeaturedProducts';
 import ProductComparison from './components/ProductComparison';
 import QuickQuoteModal from './components/QuickQuoteModal';
 import BusinessPackages from './components/BusinessPackages';
-import Logo from "../../../Logo.png"
+import Logo from "../../assets/FooterLogo.png";
 
 const ProductsShowcase = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -246,8 +246,8 @@ const ProductsShowcase = () => {
   return (
     <>
       <Helmet>
-        <title>Products - Y-Tech Computer & Services | Complete IT Solutions Vellore</title>
-        <meta name="description" content="Explore Y-Tech's complete range of IT products - Computers, Laptops, Printers, CCTV, Biometric systems, Network cables and all IT accessories in Vellore." />
+        <title>Products - Y Tech Computer & Services | Complete IT Solutions Vellore</title>
+        <meta name="description" content="Explore Y Tech's complete range of IT products - Computers, Laptops, Printers, CCTV, Biometric systems, Network cables and all IT accessories in Vellore." />
         <meta name="keywords" content="computer sales vellore, laptop repair, printer sales, cctv installation, biometric system, network cables, it accessories" />
       </Helmet>
       <div className="min-h-screen bg-background">
@@ -442,7 +442,7 @@ const ProductsShowcase = () => {
                       href="/about-y-tech"
                       className="opacity-80 hover:opacity-100 transition-opacity"
                     >
-                      About Y-Tech
+                      About Y Tech
                     </a>
                   </li>
                   <li>
@@ -529,7 +529,7 @@ const ProductsShowcase = () => {
             {/* Bottom Bar */}
             <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-sm opacity-80">
-                © {new Date()?.getFullYear()} Y-Tech Computer. All rights
+                © {new Date()?.getFullYear()} Y Tech Computer. All rights
                 reserved.
               </p>
               <div className="flex items-center space-x-4 mt-4 md:mt-0">

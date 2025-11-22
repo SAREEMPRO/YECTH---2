@@ -72,7 +72,7 @@ const ServiceAreasSection = () => {
       company: "VIT University",
       person: "Dr. Rajesh Kumar",
       role: "IT Administrator",
-      content: "Y-Tech has been maintaining our computer labs for 3 years. Their quick response and expertise keep our systems running smoothly during critical academic periods.",
+      content: "Y Tech has been maintaining our computer labs for 3 years. Their quick response and expertise keep our systems running smoothly during critical academic periods.",
       rating: 5,
       service: "AMC Services"
     },
@@ -82,7 +82,7 @@ const ServiceAreasSection = () => {
       company: "Leather Craft Industries",
       person: "Ms. Priya Sharma",
       role: "Operations Manager",
-      content: "When our entire network went down during peak season, Y-Tech restored everything within 2 hours. Excellent emergency support that saved our business day.",
+      content: "When our entire network went down during peak season, Y Tech restored everything within 2 hours. Excellent emergency support that saved our business day.",
       rating: 5,
       service: "Emergency Support"
     },
@@ -92,7 +92,7 @@ const ServiceAreasSection = () => {
       company: "Auto Components Ltd",
       person: "Mr. Suresh Babu",
       role: "Plant Manager",
-      content: "Professional networking setup for our new facility. Y-Tech delivered enterprise-grade solutions at competitive prices with ongoing support.",
+      content: "Professional networking setup for our new facility. Y Tech delivered enterprise-grade solutions at competitive prices with ongoing support.",
       rating: 5,
       service: "Networking Solutions"
     }

@@ -178,7 +178,7 @@ const ContactForm = () => {
           Request Submitted Successfully!
         </h3>
         <p className="text-text-secondary mb-4">
-          Thank you for contacting Y-Tech. We'll respond to your{" "}
+          Thank you for contacting Y Tech. We'll respond to your{" "}
           {getLabel(formData.inquiryType, inquiryTypes)} inquiry within{" "}
           {getResponseTime()?.toLowerCase()}.
         </p>

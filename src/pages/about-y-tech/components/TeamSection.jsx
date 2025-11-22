@@ -12,7 +12,7 @@ const TeamSection = () => {
       experience: "15+ Years",
       certifications: ["HP Authorized Technician", "Dell Certified Professional", "Lenovo Service Partner"],
       image: "https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=400",
-      description: "Leading Y-Tech\'s vision of making technology accessible to every business in Tamil Nadu.",
+      description: "Leading Y Tech\'s vision of making technology accessible to every business in Tamil Nadu.",
       contact: "+91 90926 19444"
     },
     {
